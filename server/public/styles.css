@@ -1,0 +1,40 @@
+body {
+  background-color: #001D38;
+}
+
+.about-me .about-details h3 {
+  font-size: 50px;
+  font-weight: 700;
+  color: #9984F1;
+}
+
+.footer-title {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #9984F1;
+}
+.about-description {
+  color: lavender;
+}
+
+.contact-row {
+  color: orange;
+  font-size: 1em;
+}
+
+.color-pattern {
+  position: absolute;
+  right: 0px;
+  top: -100px;
+  z-index: -1;
+}
+
+.my-pic {
+  width: 120%;
+  height: 80%;
+}
+
+.about-icon {
+  font-size: 3.25rem;
+  color: rgb(7, 177, 177);
+}
