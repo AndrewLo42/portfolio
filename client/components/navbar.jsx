@@ -2,8 +2,11 @@ import React from 'react';
 import {
   Navbar,
   NavbarToggler,
-  NavbarBrand,
-  Nav
+  Container,
+  Collapse,
+  Nav,
+  NavItem,
+  NavbarBrand
 } from 'reactstrap';
 import {
   Link,
@@ -11,10 +14,40 @@ import {
 } from 'react-scroll';
 
 class NavBar extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = ({
+      isOpen: false
+    });
+    this.handleToggle = this.handleToggle.bind(this);
+  }
+
+  handleToggle() {
+    if (window.innerWidth < 768) {
+      this.setState({ isOpen: !this.state.isOpen });
+    }
+  }
+
   render() {
-    return(
+    let offset = -86;
+
+    if (window.innerWidth < 768) {
+      offset = -286;
+    }
+    return (
       <>
-        <Container fluid={true} className="py-3 shadow-lg bg-white sticky-top">
+        <Container fluid={true} className="py-3 shadow-lg header-item sticky-top">
+          <Navbar expand="md">
+            <NavbarBrand onClick={() => {
+              scroll.scrollToTop();
+              if (this.state.isOpen) {
+                this.handleToggle();
+              }
+            }}
+            className="pointer decoration-none">
+              <img src="./images/blip.png"
+                className="img-fluid header-logo"/>
+            </NavbarBrand>
             <NavbarToggler onClick={this.handleToggle} navbar="true" />
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto" navbar>
@@ -25,9 +58,9 @@ class NavBar extends React.Component {
                     smooth={true}
                     offset={offset}
                     duration={1000}
-                    className="pointer px-0 nav-link"
+                    className="pointer-spin px-0 nav-link"
                     onClick={this.handleToggle}>
-                    About Me
+                    About
                   </Link>
                 </NavItem>
                 <NavItem className="ml-md-5">
@@ -37,7 +70,7 @@ class NavBar extends React.Component {
                     smooth={true}
                     offset={offset}
                     duration={1000}
-                    className="pointer px-0 nav-link"
+                    className="pointer-spin px-0 nav-link"
                     onClick={this.handleToggle}>
                     Skills
                   </Link>
@@ -49,7 +82,7 @@ class NavBar extends React.Component {
                     smooth={true}
                     offset={offset}
                     duration={1000}
-                    className="pointer px-0 nav-link"
+                    className="pointer-spin px-0 nav-link"
                     onClick={this.handleToggle}>
                     Tools
                   </Link>
@@ -61,7 +94,7 @@ class NavBar extends React.Component {
                     smooth={true}
                     offset={offset}
                     duration={1000}
-                    className="pointer px-0 nav-link"
+                    className="pointer-spin px-0 nav-link"
                     onClick={this.handleToggle}>
                     Applications
                   </Link>
@@ -73,7 +106,7 @@ class NavBar extends React.Component {
                     smooth={true}
                     offset={offset}
                     duration={1000}
-                    className="pointer px-0 nav-link"
+                    className="pointer-spin px-0 nav-link"
                     onClick={this.handleToggle}>
                     Contact
                   </Link>
@@ -86,3 +119,5 @@ class NavBar extends React.Component {
     );
   }
 }
+
+export default NavBar;

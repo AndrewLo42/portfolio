@@ -7,8 +7,8 @@ import {
 
 function ContactFooter() {
   return (
-    <>
-      <Container className="footer-container">
+    <div className="contact-page">
+      <Container className="footer-container" id="contact">
         <Col className="footer-title text-center">
           Contact Me
         </Col>
@@ -17,7 +17,7 @@ function ContactFooter() {
             <i className="fas fa-map-marker-alt mr-2" />Orange County
           </p>
           <p className="text-center mb-md-0 mx-4">
-            <i className="fas fa-envelope solid mr-2" />Orange County
+            <i className="fas fa-envelope solid mr-2" />AndrewCLo42@gmail.com
           </p>
           <p className="text-center mb-md-0 mx-4">
             <i className="fas fa-phone mr-2" />(949)-232-5930
@@ -59,7 +59,7 @@ function ContactFooter() {
           Hobbies
         </div>
       </Col>
-    </>
+    </div>
   );
 
 }

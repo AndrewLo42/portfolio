@@ -1,24 +1,204 @@
+@font-face {
+  font-family: GeoSans;
+  src: url('./fonts/GeosansLight.ttf');
+}
+
 body {
-  background-color: #001D38;
+  background: linear-gradient(90deg, #001D38 0%, #3F2B96 100%);
+  font-family: GeoSans;
+}
+
+.about-page {
+  border-top: 3px solid lavender;
+  background: linear-gradient(5deg, #001D38 0%, #3F2B96 100%);
+}
+.apps-page {
+  background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+  border-top: 3px solid lavender;
+
+}
+.contact-page {
+  background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+  border-top: 3px solid #3F2B96;
+}
+.welcome-page {
+  background: linear-gradient(5deg, #3F2B96 0%, #001D38 100%);
+}
+
+.carousel-img {
+  height: 50vh;
+  width: 50vh;
+}
+
+.carousel-direction {
+  font-size: 3rem;
+  color: gray;
+}
+.carousel-direction:hover {
+  color: lavender;
+}
+.carousel-indicators {
+  color: rgba(0, 255, 255, 0.803);
+  font-size: 2rem;
+}
+
+.carousel-container {
+  border: 1px solid darkcyan;
+}
+
+.indicator-container {
+  z-index: 30;
 }
 
 .about-me .about-details h3 {
   font-size: 50px;
   font-weight: 700;
   color: #9984F1;
+
+}
+
+.about-icons {
+  text-decoration: none;
+}
+
+.my-img {
+  border: 1px solid steelblue;
+}
+
+.pointer:hover{
+  cursor: pointer;
+}
+.pointer-spin:hover {
+  color: pink;
+  cursor: pointer;
+  transform: rotate(360deg);
+}
+
+.pointer-spin {
+  transition: .7s;
+}
+
+a {
+  color: white !important;
+  /* color: rgba(0, 255, 255, 0.803) !important; */
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  transition: .3s all;
+}
+
+a:hover {
+  transition: .3s all;
+  color: rgba(0, 255, 255, 0.803) !important;
+  text-decoration: none;
+}
+
+a::before,
+a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  height: 3px;
+  width: 100%;
+  background-color: transparent;
+  z-index: 1;
+  display: inline-block;
+  transition: .3s all;
+}
+
+a::after {
+  width: 0%;
+  background: linear-gradient(90deg, #90b1e9 0%, #99e4a4 100%);;
+}
+
+a:hover::after,
+.content-div:hover .heading::after {
+  width: 100%;
+  transition: .3s all;
+}
+
+a.decoration-none:hover::before,
+a.decoration-none:hover::after {
+  display: none;
+}
+
+a.decoration-none:hover::before,
+a.decoration-none:hover::after {
+  display: none;
+}
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, .5);
+}
+.header-logo {
+  height: 5vh;
+  width: 5vh;
+}
+.header-item{
+  background-color: #070101;
+  /* background-color: rgb(61, 60, 65); */
+  border-bottom: 1px solid rgba(48, 46, 52, 0.721);
+  font-size: 1.3rem;
+}
+
+a:hover::after,
+.content-div:hover .heading::after {
+  width: 100%;
+  transition: .3s all;
+}
+
+.active {
+  color: darkcyan !important;
+  text-decoration: none;
+}
+
+
+.apps-title {
+  color: cyan;
+}
+
+.app-card {
+  border: 1px solid cyan;
+  background-color: cornflowerblue;
+  width: 20%;
+}
+
+.project-icon {
+  margin-top: 5%;
+  height: 7vh;
+  width: 7vh;
+  background-color: steelblue;
+  margin: auto;
+  border: 1px solid #3F2B96;
+  border-radius: 50%;
+}
+
+.footer-container {
+  min-height: 30vh;
 }
 
 .footer-title {
   font-size: 2.5rem;
   font-weight: 500;
-  color: #9984F1;
+  color: steelblue;
+}
+
+.welcome-page,
+#applications {
+  padding-top: 5vh;
+  min-height: 95vh;
 }
 .about-description {
+  padding-top: 5vh;
+  min-height: 95vh;
   color: lavender;
 }
 
 .contact-row {
-  color: orange;
+  color: #9984F1;
   font-size: 1em;
 }
 
