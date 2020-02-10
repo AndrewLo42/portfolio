@@ -14,7 +14,7 @@ class Welcome extends React.Component {
         {
           src: './images/nair.jpg',
           altText: 'Compete',
-          caption: 'Competitor'
+          caption: 'Software Engineer'
         },
         {
           src: './images/foxhmm.jpg',

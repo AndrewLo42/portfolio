@@ -4,25 +4,36 @@
 }
 
 body {
-  background: linear-gradient(90deg, #001D38 0%, #3F2B96 100%);
+  background-color: #020531;
+  /* background: linear-gradient(90deg, #001D38 0%, #3F2B96 100%); */
   font-family: GeoSans;
 }
-
+.header-item{
+  background-color: #020531;
+  /* background-color: #070101; */
+  border-bottom: 1.2px solid #302e34b8;
+  font-size: 1.3rem;
+}
 .about-page {
   border-top: 3px solid lavender;
-  background: linear-gradient(5deg, #001D38 0%, #3F2B96 100%);
+  background: linear-gradient(5deg, #001D38 0%, #5441ab  100%);
+}
+.skills-page {
+  border-top: 3px solid lavender;
+  background: linear-gradient(5deg, #437380 0%, #001D38 60%);
 }
 .apps-page {
-  background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
   border-top: 3px solid lavender;
+  background: linear-gradient(3deg, #1CB5E0 0%, #001D38 65%);
 
 }
 .contact-page {
-  background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+  background: linear-gradient(5deg, #d9e7ff 0%, #1CB5E0 80% );
+  /* background: linear-gradient(5deg, #e3ffe7 0%, #d9e7ff 100%); */
   border-top: 3px solid #3F2B96;
 }
 .welcome-page {
-  background: linear-gradient(5deg, #3F2B96 0%, #001D38 100%);
+  background: linear-gradient(5deg, #5441ab 0%, #001D38 100%);
 }
 
 .carousel-img {
@@ -38,7 +49,7 @@ body {
   color: lavender;
 }
 .carousel-indicators {
-  color: rgba(0, 255, 255, 0.803);
+  color: #00ffffcd;
   font-size: 2rem;
 }
 
@@ -48,6 +59,15 @@ body {
 
 .indicator-container {
   z-index: 30;
+}
+
+.slide-caption {
+  font-size: 3rem;
+  color: white;
+  position: relative !important;
+  z-index: 0;
+  right: 0;
+  left: 0;
 }
 
 .about-me .about-details h3 {
@@ -89,7 +109,7 @@ a {
 
 a:hover {
   transition: .3s all;
-  color: rgba(0, 255, 255, 0.803) !important;
+  color: #00ffffcd !important;
   text-decoration: none;
 }
 
@@ -136,12 +156,6 @@ a.decoration-none:hover::after {
 .header-logo {
   height: 5vh;
   width: 5vh;
-}
-.header-item{
-  background-color: #070101;
-  /* background-color: rgb(61, 60, 65); */
-  border-bottom: 1px solid rgba(48, 46, 52, 0.721);
-  font-size: 1.3rem;
 }
 
 a:hover::after,
@@ -217,4 +231,18 @@ a:hover::after,
 .about-icon {
   font-size: 3.25rem;
   color: rgb(7, 177, 177);
+}
+
+.skills-card {
+  text-align: center;
+  background-color: #302e34b8;
+  color: #00ffffcd;
+  border: 1px solid steelblue;
+}
+
+
+@media (max-width: 575px) {
+  .carousel-img {
+    width: 100%;
+  }
 }

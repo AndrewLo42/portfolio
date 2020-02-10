@@ -78,10 +78,11 @@ class CarouselComponent extends React.Component {
         <i className="carousel-direction fas fa-chevron-left carousel-control-prev" onClick={this.goToPreviousSlide}/>
         <i className="carousel-direction fas fa-chevron-right carousel-control-next" onClick={this.goToNextSlide}/>
 
-        <div key={this.state.slideIndex} className="carousel-slides m-auto">
+        <div key={this.state.slideIndex} className="row carousel-slides m-auto">
           <img
             className=" img-fluid carousel-img"
             src={`${this.props.slides[this.state.slideIndex].src}`}/>
+          <div className="text-center carousel-caption slide-caption">{this.props.slides[this.state.slideIndex].caption} </div>
         </div>
         <div className="indicator-container carousel-indicators justify-content-center row my-2">
           {this.renderIndicators()}

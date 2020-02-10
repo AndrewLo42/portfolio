@@ -4,6 +4,7 @@ import ContactFooter from './contact';
 import NavBar from './navbar';
 import Applications from './projects';
 import Welcome from './welcome';
+import Skills from './skills-page';
 
 class App extends React.Component {
   render() {
@@ -12,6 +13,7 @@ class App extends React.Component {
         <NavBar/>
         <Welcome />
         <AboutMe />
+        <Skills />
         <Applications />
         <ContactFooter />
       </>
