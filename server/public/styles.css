@@ -2,10 +2,13 @@
   font-family: GeoSans;
   src: url('./fonts/GeosansLight.ttf');
 }
+@font-face {
+  font-family: CaviarDreams;
+  src: url('./fonts/CaviarDreams.ttf');
+}
 
 body {
   background-color: #020531;
-  /* background: linear-gradient(90deg, #001D38 0%, #3F2B96 100%); */
   font-family: GeoSans;
 }
 .header-item{
@@ -21,6 +24,13 @@ body {
 .skills-page {
   border-top: 3px solid lavender;
   background: linear-gradient(5deg, #437380 0%, #001D38 60%);
+  padding-top: 5vh;
+  color: lavender;
+}
+.tools-page {
+  border-top: 3px solid lavender;
+  background: linear-gradient(5deg, #001D38 0%, #437380 100%);
+  padding-top: 5vh;
 }
 .apps-page {
   border-top: 3px solid lavender;
@@ -32,8 +42,15 @@ body {
   /* background: linear-gradient(5deg, #e3ffe7 0%, #d9e7ff 100%); */
   border-top: 3px solid #3F2B96;
 }
+.footer-container {
+  min-height: 45vh;
+}
 .welcome-page {
-  background: linear-gradient(5deg, #5441ab 0%, #001D38 100%);
+  background: linear-gradient(5deg, #5441ab 0%, #001D38 90%);
+}
+
+.welcome-title {
+  color: #9984F1;
 }
 
 .carousel-img {
@@ -74,7 +91,6 @@ body {
   font-size: 50px;
   font-weight: 700;
   color: #9984F1;
-
 }
 
 .about-icons {
@@ -151,7 +167,10 @@ a.decoration-none:hover::after {
 }
 .navbar-toggler:focus {
   outline: none;
-  box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, .5);
+  box-shadow: 0 0 0 0.2rem #8aa6bf80;
+}
+.navbar-icon {
+  color: #00ffffcd;
 }
 .header-logo {
   height: 5vh;
@@ -165,19 +184,57 @@ a:hover::after,
 }
 
 .active {
-  color: darkcyan !important;
+  color: #2d9393 !important;
   text-decoration: none;
 }
-
 
 .apps-title {
   color: cyan;
 }
 
 .app-card {
-  border: 1px solid cyan;
-  background-color: cornflowerblue;
-  width: 20%;
+  border: 1px solid lavender;
+  background-color: #2f9aba;
+  width: 35%;
+  height: 15rem;
+  font-size: 2rem;
+  transition: .5s;
+  color: #020531;
+}
+
+.app-card:hover {
+  border: 1px solid #99e4a4;
+  background-color: #186982;
+  color: #00ffffcd;
+  transform: translateY(10px);
+}
+
+.app-btn:hover {
+  color: pink !important;
+  text-decoration: none;
+}
+
+.app-title {
+  font-size: 2rem;
+  color: lavender;
+  text-decoration: underline;
+  text-decoration-color: #9984F1;
+}
+.app-info {
+  font-size: 1.5rem;
+  color: #99e4a4;
+}
+.app-basket {
+  transition: opacity 0.5s;
+  opacity: 1;
+  border: 1px solid #9984F1;
+  width: 75%;
+  background: #2f5059;
+  border-radius: 5px;
+}
+.app-basket.hide {
+  opacity: 0;
+  pointer-events:none;
 }
 
 .project-icon {
@@ -190,30 +247,21 @@ a:hover::after,
   border-radius: 50%;
 }
 
-.footer-container {
-  min-height: 30vh;
-}
-
-.footer-title {
-  font-size: 2.5rem;
-  font-weight: 500;
-  color: steelblue;
-}
-
 .welcome-page,
+.skills-page,
+.tools-page,
 #applications {
   padding-top: 5vh;
   min-height: 95vh;
 }
+
 .about-description {
   padding-top: 5vh;
   min-height: 95vh;
   color: lavender;
 }
-
-.contact-row {
-  color: #9984F1;
-  font-size: 1em;
+.about-paragraphs {
+  font-size: 1.2rem;
 }
 
 .color-pattern {
@@ -230,19 +278,86 @@ a:hover::after,
 
 .about-icon {
   font-size: 3.25rem;
-  color: rgb(7, 177, 177);
+  color: #07b1b1;
+  transition: .25s;
+}
+
+.about-icon:hover {
+  transform: scale(1.1);
+  color: #2a8e8e;
+}
+
+.skills-card,
+.tools-card {
+  text-align: center;
+  font-family: CaviarDreams;
+  border: 1px solid steelblue;
+  transition: .75s;
 }
 
 .skills-card {
-  text-align: center;
-  background-color: #302e34b8;
+  background-color: #3c159878;
   color: #00ffffcd;
-  border: 1px solid steelblue;
+  padding-bottom: 1.5rem;
+  font-size: 7vh;
 }
 
+.tools-card {
+  font-size: 6vh;
+  color: #9984F1;
+  background-color: #412859;
+}
+
+.footer-title {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #001D38;
+}
+.contact-row {
+  color: #5441ab;
+  font-size: 1.2em;
+}
+
+.slide-in {
+  animation: slide-in 1s;
+}
+
+.fade-in {
+  animation: fade-in 1s;
+}
 
 @media (max-width: 575px) {
   .carousel-img {
     width: 100%;
   }
+
+  .mobile-skills-row {
+    justify-content: space-evenly;
+  }
+
+  .mobile-skills-card {
+    margin-bottom: 15px;
+    padding: 0px;
+    width: 45%;
+  }
+}
+
+@keyframes fade-in {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fade-out {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@keyframes slide-in {
+  0% { transform: translateY(100%); }
+  100% { transform: translateY(0%); }
+}
+
+@keyframes slide-out {
+  0% { transform: translateY(0%); }
+  100% { transform: translateY(100%); }
 }

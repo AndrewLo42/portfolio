@@ -19,7 +19,7 @@ class Welcome extends React.Component {
         {
           src: './images/foxhmm.jpg',
           altText: 'hmm',
-          caption: 'Fox HMMM'
+          caption: 'Competitor'
         },
         {
           src: './images/knee.gif',
@@ -34,6 +34,9 @@ class Welcome extends React.Component {
     return (
       <div className=" welcome-page">
         <Container>
+          <Col>
+            <h1 className="welcome-title">My name is Andrew Lo, and I&#39;m a ...</h1>
+          </Col>
           <Row className="row justify-content-center">
             <CarouselComponent slides={this.state.carouselSlides}/>
           </Row>

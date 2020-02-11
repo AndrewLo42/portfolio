@@ -1,29 +1,35 @@
 import React from 'react';
 import {
-  Container,
-  Row,
-  Col,
   Card,
   CardImg,
-  CardText,
   CardBody,
-  CardTitle,
-  CardSubtitle,
-  Button
+  CardTitle
 } from 'reactstrap';
 
-function AppCard(props) {
-  return (
-    <>
-      <Card className="app-card mr-3">
-        <CardImg top className="mt-2 project-icon img-fluid" src="/images/mmfavicon.png" />
-        <CardBody>
-          <CardTitle className="text-center">
-            Yu-Gi-Oh Memory Match
-          </CardTitle>
-        </CardBody>
-      </Card>
-    </>
+class AppCard extends React.Component {
+  constructor(props) {
+    super(props);
+    this.sendBasket = this.sendBasket.bind(this);
+  }
 
-  );
+  sendBasket() {
+    this.props.toggleBasket(this.props.appInfo.appId - 1);
+  }
+
+  render() {
+    return (
+      <>
+        <Card className="app-card mr-3 fade-in" onClick={this.sendBasket}>
+          <CardImg top className="mt-2 project-icon img-fluid" src={this.props.appInfo.icon} />
+          <CardBody>
+            <CardTitle className="text-center">
+              {this.props.appInfo.name}
+            </CardTitle>
+          </CardBody>
+        </Card>
+      </>
+    );
+  }
 }
+
+export default AppCard;

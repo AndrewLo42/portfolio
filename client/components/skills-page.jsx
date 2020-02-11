@@ -19,81 +19,81 @@ function Skills() {
             </div>
           </Col>
           <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-skills-card">
-            <Card className="h-100 skills-card slide-in-10">
+            <Card className="h-100 skills-card slide-in">
               <CardBody>
                 <i className="devicon-javascript-plain"></i>
                 <div className="my-3">
-                  <h4 className="text-center h5">JavaScript</h4>
+                  <h4 className="text-center skills-text">JavaScript</h4>
                 </div>
               </CardBody>
             </Card>
           </Col>
           <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-skills-card">
-            <Card className="h-100 skills-card slide-in-10">
+            <Card className="h-100 skills-card slide-in">
               <CardBody>
                 <i className="devicon-react-original"></i>
                 <div className="my-3">
-                  <h4 className="text-center h5">React.js</h4>
+                  <h4 className="text-center skills-text">React.js</h4>
                 </div>
               </CardBody>
             </Card>
           </Col>
           <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-skills-card">
-            <Card className="h-100 skills-card slide-in-10">
+            <Card className="h-100 skills-card slide-in">
               <CardBody>
                 <i className="devicon-html5-plain"></i>
                 <div className="my-3">
-                  <h4 className="text-center h5">HTML5</h4>
+                  <h4 className="text-center skills-text">HTML5</h4>
                 </div>
               </CardBody>
             </Card>
           </Col>
           <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-skills-card">
-            <Card className="h-100 skills-card slide-in-10">
+            <Card className="h-100 skills-card slide-in">
               <CardBody>
                 <i className="devicon-jquery-plain"></i>
                 <div className="my-3">
-                  <h4 className="text-center h5">jQuery</h4>
+                  <h4 className="text-center skills-text">jQuery</h4>
                 </div>
               </CardBody>
             </Card>
           </Col>
           <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-skills-card">
-            <Card className="h-100 skills-card slide-in-10">
+            <Card className="h-100 skills-card slide-in">
               <CardBody>
                 <i className="devicon-postgresql-plain"></i>
                 <div className="my-3">
-                  <h4 className="text-center h5">PostgreSQL</h4>
+                  <h4 className="text-center skills-text">PostgreSQL</h4>
                 </div>
               </CardBody>
             </Card>
           </Col>
           <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-skills-card">
-            <Card className="h-100 skills-card slide-in-10">
+            <Card className="h-100 skills-card slide-in">
               <CardBody>
                 <i className="devicon-nodejs-plain"></i>
                 <div className="my-3">
-                  <h4 className="text-center h5">Node.JS</h4>
+                  <h4 className="text-center skills-text">Node.JS</h4>
                 </div>
               </CardBody>
             </Card>
           </Col>
           <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-skills-card">
-            <Card className="h-100 skills-card slide-in-10">
+            <Card className="h-100 skills-card slide-in">
               <CardBody>
                 <i className="devicon-css3-plain"></i>
                 <div className="my-3">
-                  <h4 className="text-center h5">CSS3</h4>
+                  <h4 className="text-center skills-text">CSS3</h4>
                 </div>
               </CardBody>
             </Card>
           </Col>
           <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-skills-card">
-            <Card className="h-100 skills-card slide-in-10">
+            <Card className="h-100 skills-card slide-in">
               <CardBody>
-                <img src="https://img.icons8.com/color/48/000000/arduino.png"></img>
+                <i className="fas fa-infinity"></i>
                 <div className="my-3">
-                  <h4 className="text-center h5">Arduino</h4>
+                  <h4 className="text-center skills-text">Arduino</h4>
                 </div>
               </CardBody>
             </Card>

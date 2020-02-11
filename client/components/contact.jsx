@@ -57,6 +57,7 @@ function ContactFooter() {
       <Col className=" justify-content-center ">
         <div className="boxed-btn3 text-center" href="#">
           Hobbies
+          {/* <img src="https://img.icons8.com/ios-filled/50/000000/super-smash-bros.png"></img> */}
         </div>
       </Col>
     </div>

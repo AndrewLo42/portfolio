@@ -48,7 +48,7 @@ class NavBar extends React.Component {
               <img src="./images/blip.png"
                 className="img-fluid header-logo"/>
             </NavbarBrand>
-            <NavbarToggler onClick={this.handleToggle} navbar="true" />
+            <NavbarToggler onClick={this.handleToggle} navbar="true" > <i className="navbar-icon fas fa-bars"></i></NavbarToggler>
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto" navbar>
                 <NavItem>

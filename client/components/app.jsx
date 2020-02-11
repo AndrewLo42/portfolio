@@ -5,6 +5,7 @@ import NavBar from './navbar';
 import Applications from './projects';
 import Welcome from './welcome';
 import Skills from './skills-page';
+import Tools from './tools-page';
 
 class App extends React.Component {
   render() {
@@ -14,6 +15,7 @@ class App extends React.Component {
         <Welcome />
         <AboutMe />
         <Skills />
+        <Tools />
         <Applications />
         <ContactFooter />
       </>
