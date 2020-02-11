@@ -18,7 +18,7 @@ function Skills() {
               <h3 className="text-center heading mb-4 spread slide-in">Technical Skills</h3>
             </div>
           </Col>
-          <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-skills-card">
+          <Col lg="3" md="5" sm="6" className="p-sm-3 mobile-skills-card">
             <Card className="h-100 skills-card slide-in">
               <CardBody>
                 <i className="devicon-javascript-plain"></i>
@@ -28,7 +28,7 @@ function Skills() {
               </CardBody>
             </Card>
           </Col>
-          <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-skills-card">
+          <Col lg="3" md="5" sm="6" className="p-sm-3 mobile-skills-card">
             <Card className="h-100 skills-card slide-in">
               <CardBody>
                 <i className="devicon-react-original"></i>
@@ -38,7 +38,7 @@ function Skills() {
               </CardBody>
             </Card>
           </Col>
-          <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-skills-card">
+          <Col lg="3" md="5" sm="6" className="p-sm-3 mobile-skills-card">
             <Card className="h-100 skills-card slide-in">
               <CardBody>
                 <i className="devicon-html5-plain"></i>
@@ -48,7 +48,7 @@ function Skills() {
               </CardBody>
             </Card>
           </Col>
-          <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-skills-card">
+          <Col lg="3" md="5" sm="6" className="p-sm-3 mobile-skills-card">
             <Card className="h-100 skills-card slide-in">
               <CardBody>
                 <i className="devicon-jquery-plain"></i>
@@ -58,7 +58,7 @@ function Skills() {
               </CardBody>
             </Card>
           </Col>
-          <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-skills-card">
+          <Col lg="3" md="5" sm="6" className="p-sm-3 mobile-skills-card">
             <Card className="h-100 skills-card slide-in">
               <CardBody>
                 <i className="devicon-postgresql-plain"></i>
@@ -68,7 +68,7 @@ function Skills() {
               </CardBody>
             </Card>
           </Col>
-          <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-skills-card">
+          <Col lg="3" md="5" sm="6" className="p-sm-3 mobile-skills-card">
             <Card className="h-100 skills-card slide-in">
               <CardBody>
                 <i className="devicon-nodejs-plain"></i>
@@ -78,7 +78,7 @@ function Skills() {
               </CardBody>
             </Card>
           </Col>
-          <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-skills-card">
+          <Col lg="3" md="5" sm="6" className="p-sm-3 mobile-skills-card">
             <Card className="h-100 skills-card slide-in">
               <CardBody>
                 <i className="devicon-css3-plain"></i>
@@ -88,7 +88,7 @@ function Skills() {
               </CardBody>
             </Card>
           </Col>
-          <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-skills-card">
+          <Col lg="3" md="5" sm="6" className="p-sm-3 mobile-skills-card">
             <Card className="h-100 skills-card slide-in">
               <CardBody>
                 <i className="fas fa-infinity"></i>

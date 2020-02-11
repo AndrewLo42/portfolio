@@ -53,7 +53,7 @@ function AboutMe() {
                 <div className="about-paragraphs slide-in-10">
                   <p>Hi! My name is Andrew Lo, and I&#39;m a Software Engineer who has a passion for coding and an unyielding thirst for learning.</p>
                   <p>I&#39;m well versed in JavaScript (ES5 & ES6), React.js, jQuery, Node.js, Express, SQL, HTML, and CSS. I&#39;m skilled with tools like Git/GitHub, Postman, npm, and Webpack. I&#39;ve had the privilege of working on team-based and solo projects to build full-stack web applications.</p>
-                  <p>I&#39;m super sick at Smash Bros.</p>
+                  <p>I&#39;m excited to be an asset to your team!</p>
                 </div>
               </div>
             </div>

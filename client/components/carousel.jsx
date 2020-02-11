@@ -68,9 +68,9 @@ class CarouselComponent extends React.Component {
         <div className="carousel fade-in">
           <i className="carousel-direction fas fa-chevron-left carousel-control-prev" onClick={this.goToPreviousSlide}/>
           <i className="carousel-direction fas fa-chevron-right carousel-control-next" onClick={this.goToNextSlide}/>
-          <div key={this.state.slideIndex} className="row carousel-slides m-auto">
+          <div key={this.state.slideIndex} className="row justify-contents-center carousel-slides m-auto">
             <img
-              className=" img-fluid carousel-img fade-in"
+              className="img-fluid carousel-img fade-in"
               src={`${this.props.slides[this.state.slideIndex].src}`}/>
             <div className="mx-auto text-center fade-in carousel-caption slide-caption">
               {this.props.slides[this.state.slideIndex].caption}

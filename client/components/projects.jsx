@@ -1,5 +1,6 @@
 import React from 'react';
 import AppCard from './project-card';
+import BigApp from './big-project-card';
 import {
   Container,
   Row,
@@ -26,7 +27,7 @@ class Applications extends React.Component {
           github: 'https://github.com/AndrewLo42/wicked-pedals',
           live: 'http://wicked-pedals.andrewclo.com/',
           icon: '/images/minpedal.png',
-          description: 'Full-stack e-commerce experience for guitar pedals and pedal supplies.'
+          description: 'Full-stack e-commerce experience for guitar pedals and pedal supplies. Built with React and PostgreSQL'
         },
         {
           appId: 3,
@@ -34,7 +35,7 @@ class Applications extends React.Component {
           github: 'https://github.com/AndrewLo42/shadow-realmer',
           live: 'http://shadowrealmer.com/',
           icon: '/images/shadowrealmer.png',
-          description: 'A meet up app for trading card players of all kinds; enthusiasts, casuals, and the curious who want to find games to play, find events, trade cards, or just to make new friends.'
+          description: 'A meet up app for trading card players of all kinds; enthusiasts, casuals, and the curious who want to find games to play, find events, trade cards, or just to make new friends. Built with React and PostgreSQL, utilizing various npm packages. '
         }
       ],
       openAppBasket: false,
@@ -90,12 +91,17 @@ class Applications extends React.Component {
     const showBasketState = this.state.openAppBasket ? 'app-basket' : 'app-basket hide';
     return (
       <div className="apps-page content-div" id="applications">
-        <Container>
+        <Container className="">
           <h2 className="text-center mb-2 apps-title">Applications Produced</h2>
-          <Col className="apps-container d-flex justify-content-around">
+          <Col className=" apps-container d-sm-flex d-none justify-content-around">
             <AppCard appInfo={this.state.apps[0]} toggleBasket={this.toggleAppBasket} />
             <AppCard appInfo={this.state.apps[1]} toggleBasket={this.toggleAppBasket}/>
             <AppCard appInfo={this.state.apps[2]} toggleBasket={this.toggleAppBasket}/>
+          </Col>
+          <Col className="apps-container d-sm-none d-block">
+            <BigApp appInfo={this.state.apps[0]}/>
+            <BigApp appInfo={this.state.apps[1]} />
+            <BigApp appInfo={this.state.apps[2]} />
           </Col>
           {this.showAppInfo(showBasketState)}
 

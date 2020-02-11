@@ -209,6 +209,10 @@ a:hover::after,
   transform: translateY(10px);
 }
 
+.app-btn {
+  font-size: 1.5rem;
+}
+
 .app-btn:hover {
   color: pink !important;
   text-decoration: none;
@@ -238,13 +242,27 @@ a:hover::after,
 }
 
 .project-icon {
-  margin-top: 5%;
   height: 7vh;
   width: 7vh;
+  margin-top: 5%;
   background-color: steelblue;
   margin: auto;
   border: 1px solid #3F2B96;
   border-radius: 50%;
+}
+
+.big-app-icon {
+  height: 20vh;
+  width: 20vh;
+  margin-top: 5%;
+  background-color: rgb(100, 162, 213);
+  margin: auto;
+}
+.big-app-card {
+  background-color: steelblue;
+}
+.card-footer {
+  background-color: #3e719b;
 }
 
 .welcome-page,
@@ -293,10 +311,12 @@ a:hover::after,
   font-family: CaviarDreams;
   border: 1px solid steelblue;
   transition: .75s;
+
 }
 
 .skills-card {
-  background-color: #3c159878;
+  /* background-color: #3c159878; */
+  background-color: #6200ee;
   color: #00ffffcd;
   padding-bottom: 1.5rem;
   font-size: 7vh;
@@ -326,6 +346,14 @@ a:hover::after,
   animation: fade-in 1s;
 }
 
+@media (max-width: 768px) {
+  .mobile-skills-row {
+    justify-content: space-evenly;
+  }
+ .carousel-img {
+    margin: auto;
+  }
+}
 @media (max-width: 575px) {
   .carousel-img {
     width: 100%;
