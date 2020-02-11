@@ -23,7 +23,7 @@ function ContactFooter() {
             <i className="fas fa-phone mr-2" />(949)-232-5930
           </p>
         </Row>
-        <div className="footer_top">
+        {/* <div className="footer_top">
           <div className="container">
             <div className="row">
               <div className="col-xl-6 col-md-6">
@@ -52,11 +52,12 @@ function ContactFooter() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </Container>
       <Col className=" justify-content-center ">
-        <div className="boxed-btn3 text-center" href="#">
-          Hobbies
+        <div className="mb-2 boxed-btn3 text-center" href="#">
+
+          <img src="https://img.icons8.com/ios-filled/50/000000/super-smash-bros.png"></img>
         </div>
       </Col>
     </div>

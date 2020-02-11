@@ -1,14 +1,4 @@
 import React from 'react';
-import {
-  Container,
-  Row,
-  Col,
-  Carousel,
-  CarouselItem,
-  CarouselControl,
-  CarouselIndicators,
-  CarouselCaption
-} from 'reactstrap';
 
 class CarouselComponent extends React.Component {
   constructor(props) {
@@ -74,17 +64,21 @@ class CarouselComponent extends React.Component {
 
   render() {
     return (
-      <div className="carousel w-100 carousel-container">
-        <i className="carousel-direction fas fa-chevron-left carousel-control-prev" onClick={this.goToPreviousSlide}/>
-        <i className="carousel-direction fas fa-chevron-right carousel-control-next" onClick={this.goToNextSlide}/>
-
-        <div key={this.state.slideIndex} className="carousel-slides m-auto">
-          <img
-            className=" img-fluid carousel-img"
-            src={`${this.props.slides[this.state.slideIndex].src}`}/>
-        </div>
-        <div className="indicator-container carousel-indicators justify-content-center row my-2">
-          {this.renderIndicators()}
+      <div className="fade-in w-100 carousel-container ">
+        <div className="carousel fade-in">
+          <i className="carousel-direction fas fa-chevron-left carousel-control-prev" onClick={this.goToPreviousSlide}/>
+          <i className="carousel-direction fas fa-chevron-right carousel-control-next" onClick={this.goToNextSlide}/>
+          <div key={this.state.slideIndex} className="row justify-contents-center carousel-slides m-auto">
+            <img
+              className="img-fluid carousel-img fade-in"
+              src={`${this.props.slides[this.state.slideIndex].src}`}/>
+            <div className="mx-auto text-center fade-in carousel-caption slide-caption">
+              {this.props.slides[this.state.slideIndex].caption}
+            </div>
+          </div>
+          <div className="indicator-container carousel-indicators justify-content-center row my-2">
+            {this.renderIndicators()}
+          </div>
         </div>
       </div>
 
