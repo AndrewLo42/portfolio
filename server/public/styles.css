@@ -50,9 +50,21 @@ body {
 }
 
 .welcome-title {
-  color: #9984F1;
+  color: lavender;
+}
+.welcome-message {
+  color: #d9e7ff;
 }
 
+.welcome-container {
+  background-image: url('./images/GCwave.jpg');
+  background-position: center;
+  object-fit: contain;
+  background-size: contain;
+  background-repeat: repeat;
+  position: absolute;
+  width: 100%;
+}
 .carousel-img {
   height: 50vh;
   width: 50vh;
@@ -70,9 +82,9 @@ body {
   font-size: 2rem;
 }
 
-.carousel-container {
+/* .carousel-container {
   border: 1px solid darkcyan;
-}
+} */
 
 .indicator-container {
   z-index: 30;
@@ -88,9 +100,12 @@ body {
 }
 
 .about-me .about-details h3 {
-  font-size: 50px;
+  font-size: 2rem;
   font-weight: 700;
   color: #9984F1;
+}
+.about-me-title  {
+  font-size: 2.2rem;
 }
 
 .about-icons {
@@ -316,8 +331,8 @@ a:hover::after,
 
 .skills-card {
   /* background-color: #3c159878; */
-  background-color: #6200ee;
-  color: #00ffffcd;
+  background-color: #252d83;
+  color: #00ffffe7;
   padding-bottom: 1.5rem;
   font-size: 7vh;
 }
@@ -345,7 +360,11 @@ a:hover::after,
 .fade-in {
   animation: fade-in 1s;
 }
-
+@media (max-height: 414px){
+  .welcome-container{
+    display: none;
+  }
+}
 @media (max-width: 768px) {
   .mobile-skills-row {
     justify-content: space-evenly;
@@ -353,14 +372,24 @@ a:hover::after,
  .carousel-img {
     margin: auto;
   }
+  .welcome-container{
+    background-repeat: no-repeat;
+  }
 }
 @media (max-width: 575px) {
   .carousel-img {
     width: 100%;
   }
+  .carousel {
+    margin-top: 5.5rem;
+  }
 
   .mobile-skills-row {
     justify-content: space-evenly;
+  }
+
+  .skills-text {
+    font-size: 1.3rem;
   }
 
   .mobile-skills-card {

@@ -12,7 +12,7 @@ function Skills() {
   return (
     <div className="skills-page content-div position-relative" id="skills">
       <Container>
-        <Row className="mobile-skills-row">
+        <Row className="justify-content-md-center mobile-skills-row">
           <Col xs="12">
             <div className="heading-div position-relative m-auto">
               <h3 className="text-center heading mb-4 spread slide-in">Technical Skills</h3>

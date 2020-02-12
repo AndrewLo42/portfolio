@@ -8,12 +8,12 @@ import {
 function AboutMe() {
   return (
     <div className="about-page about-description content-div" id="about">
-      <Container>
+      <Container className="">
         <Row>
-          <Col className="" md="4">
-            <h3 className="mb-4 d-block d-sm-none text-md-left text-center fade-in slide-in-10">About Me</h3>
-            <img className="my-img img-fluid fade-in slide-in-10 d-flex" src="./images/piano.jpg" alt="profile" />
-            <div className="about-icons my-3 d-flex  justify-content-center fade-in slide-in-10">
+          <Col className="" md="6">
+            <h3 className="mb-4 d-block d-sm-none text-md-left text-center fade-in slide-in-10 about-me-title">About Me</h3>
+            <img className="my-img my-2 img-fluid fade-in slide-in d-flex" src="./images/coffeekid.jpg" alt="profile" />
+            <div className="about-icons my-3 d-flex justify-content-center fade-in slide-in">
               <a href="https://github.com/andrewlo42"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -28,14 +28,14 @@ function AboutMe() {
                 rel="noopener noreferrer"
                 className="decoration-none default-nav contact-linkedin pointer mr-2"
                 aria-label="LinkedIn">
-                <div className="border-div-small d-flex">
+                <div className="d-flex">
                   <i className="fab fa-linkedin about-icon m-auto" />
                 </div>
               </a>
               <a href="./assets/Andrew_Lo.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="decoration-none default-nav contact-general pointer"
+                className="decoration-none pointer"
                 aria-label="Resume Download"
               >
                 <div className="border-div-small d-flex">
@@ -44,11 +44,11 @@ function AboutMe() {
               </a>
             </div>
           </Col>
-          <Col className="md-8">
+          <Col className="md-8" sm="12">
             <div className="d-flex h-100">
               <div className="m-auto">
-                <div className="position-relative d-none d-sm-block slide-in-10">
-                  <h3 className="heading mb-4 spread fade-in">About Me</h3>
+                <div className="position-relative d-none d-sm-block slide-in">
+                  <h3 className="about-me-title heading mb-4 spread fade-in">About Me</h3>
                 </div>
                 <div className="about-paragraphs slide-in-10">
                   <p>Hi! My name is Andrew Lo, and I&#39;m a Software Engineer who has a passion for coding and an unyielding thirst for learning.</p>
