@@ -34,7 +34,10 @@ class Welcome extends React.Component {
     return (
       <div className=" welcome-page">
         <h1 className="ml-4 welcome-message">Life is a crazy, mystical thing...</h1>
-        <img src="./images/GCwave.jpg" className="welcome-container"></img>
+        <div className="welcome-container">
+
+          {/* <img src="./images/GCwave.jpg" className=></img> */}
+        </div>
         <Container className=''>
           <Col>
             <h1 className="welcome-title">My name is Andrew Lo, and I&#39;m a ...</h1>
