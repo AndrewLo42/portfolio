@@ -71,14 +71,15 @@ body {
 }
 
 .welcome-container {
+  background-image: url('./images/GCwave.jpg');
   border-top: 1px solid cyan;
   border-bottom: 1px solid cyan;
   background-position: center;
   object-fit: contain;
   background-size: contain;
   background-repeat: repeat;
-  position: absolute;
   width: 100%;
+  min-height: 25vh;
 }
 .carousel-img {
   height: 50vh;
@@ -96,10 +97,6 @@ body {
   color: #00ffffcd;
   font-size: 2rem;
 }
-
-/* .carousel-container {
-  border: 1px solid darkcyan;
-} */
 
 .indicator-container {
   z-index: 30;
@@ -144,8 +141,7 @@ body {
 }
 
 a {
-  color: white !important;
-  /* color: rgba(0, 255, 255, 0.803) !important; */
+  color: lavender !important;
   text-decoration: none;
   display: inline-block;
   position: relative;
@@ -415,16 +411,11 @@ a:hover::after,
  .carousel-img {
     margin: auto;
   }
-  .welcome-container{
-    background-repeat: no-repeat;
-  }
+
 }
 @media (max-width: 575px) {
   .carousel-img {
     width: 100%;
-  }
-  .carousel {
-    margin-top: 5.5rem;
   }
 
   .mobile-skills-row {
