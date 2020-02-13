@@ -65,7 +65,7 @@ function ContactFooter() {
       <Col className=" justify-content-center ">
         <div className="mb-2 boxed-btn3 text-center" href="#">
           <div className="smash-quote">
-            <div>... and sometimes you go out like a buster.</div>
+            <div>... and sometimes you just go out like a buster.</div>
             <div> ~ Mang0</div>
             <img className="smash-ball" src="https://img.icons8.com/ios-filled/50/000000/super-smash-bros.png">
             </img>
