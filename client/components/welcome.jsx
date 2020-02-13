@@ -33,10 +33,8 @@ class Welcome extends React.Component {
   render() {
     return (
       <div className=" welcome-page">
-        <h1 className="ml-4 welcome-message">Life is a crazy, mystical thing...</h1>
+        <h1 className="ml-4 welcome-message">Life is this crazy, mystical thing...</h1>
         <div className="welcome-container">
-
-          {/* <img src="./images/GCwave.jpg" className=></img> */}
         </div>
         <Container className=''>
           <Col>
