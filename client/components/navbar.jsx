@@ -29,7 +29,7 @@ class NavBar extends React.Component {
   }
 
   render() {
-    let offset = -86;
+    let offset = -90;
 
     if (window.innerWidth < 768) {
       offset = -286;

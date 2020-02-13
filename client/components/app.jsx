@@ -6,6 +6,7 @@ import Applications from './projects';
 import Welcome from './welcome';
 import Skills from './skills-page';
 import Tools from './tools-page';
+import BottomBar from './hobbies';
 
 class App extends React.Component {
   render() {
@@ -18,6 +19,7 @@ class App extends React.Component {
         <Tools />
         <Applications />
         <ContactFooter />
+        {/* <BottomBar /> */}
       </>
     );
   }

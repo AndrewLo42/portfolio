@@ -11,9 +11,9 @@ class CarouselComponent extends React.Component {
     this.goToNextSlide = this.goToNextSlide.bind(this);
   }
 
-  // componentDidMount() {
-  //   this.startTimer();
-  // }
+  componentDidMount() {
+    this.startTimer();
+  }
 
   componentDidUpdate() {
     this.stopTimer();
@@ -50,6 +50,15 @@ class CarouselComponent extends React.Component {
     this.setState({ slideIndex: parseInt(event.target.id) });
   }
 
+  renderArrows() {
+    return (
+      <>
+        <i className="carousel-direction fas fa-chevron-left carousel-control-prev" onClick={this.goToPreviousSlide} />
+        <i className="carousel-direction fas fa-chevron-right carousel-control-next" onClick={this.goToNextSlide} />
+      </>
+    );
+  }
+
   renderIndicators() {
     const currentIndicator = [];
     for (let index = 0; index < this.props.slides.length; index++) {
@@ -64,20 +73,12 @@ class CarouselComponent extends React.Component {
 
   render() {
     return (
-      <div className="fade-in w-100 carousel-container ">
+      <div className="pt-3 fade-in w-100 carousel-container ">
         <div className="carousel fade-in">
-          <i className="carousel-direction fas fa-chevron-left carousel-control-prev" onClick={this.goToPreviousSlide}/>
-          <i className="carousel-direction fas fa-chevron-right carousel-control-next" onClick={this.goToNextSlide}/>
           <div key={this.state.slideIndex} className="row justify-contents-center carousel-slides m-auto">
-            <img
-              className="img-fluid carousel-img fade-in"
-              src={`${this.props.slides[this.state.slideIndex].src}`}/>
-            <div className="mx-auto text-center fade-in carousel-caption slide-caption">
+            <div className="mt-2 mx-auto text-center fade-in carousel-caption slide-caption">
               {this.props.slides[this.state.slideIndex].caption}
             </div>
-          </div>
-          <div className="indicator-container carousel-indicators justify-content-center row my-2">
-            {this.renderIndicators()}
           </div>
         </div>
       </div>
@@ -85,5 +86,5 @@ class CarouselComponent extends React.Component {
     );
   }
 }
-
+// src={`${this.props.slides[this.state.slideIndex].src}`}
 export default CarouselComponent;

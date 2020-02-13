@@ -19,12 +19,12 @@ class Welcome extends React.Component {
         {
           src: './images/foxhmm.jpg',
           altText: 'hmm',
-          caption: 'Competitor'
+          caption: 'Creator'
         },
         {
           src: './images/knee.gif',
           altText: 'knee',
-          caption: 'YAAAARRRGLE'
+          caption: 'Innovator'
         }
       ]
     };
@@ -33,7 +33,9 @@ class Welcome extends React.Component {
   render() {
     return (
       <div className=" welcome-page">
-        <Container>
+        <h1 className="ml-4 welcome-message">Life is a crazy, mystical thing...</h1>
+        <img src="./images/GCwave.jpg" className="welcome-container"></img>
+        <Container className=''>
           <Col>
             <h1 className="welcome-title">My name is Andrew Lo, and I&#39;m a ...</h1>
           </Col>
@@ -41,6 +43,7 @@ class Welcome extends React.Component {
             <CarouselComponent slides={this.state.carouselSlides}/>
           </Row>
         </Container>
+
       </div>
     );
   }
