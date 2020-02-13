@@ -19,6 +19,7 @@ class Applications extends React.Component {
           github: 'https://github.com/AndrewLo42/yu-gi-oh-memory-match',
           live: 'http://exodia-exodus.andrewclo.com/',
           icon: '/images/mmfavicon.png',
+          example: '/images/mm.gif',
           description: 'A JavaScript memory matching application based on the popular card game, Yu-Gi-Oh. Users have to match 5 pairs before the Computer player!'
         },
         {
@@ -27,6 +28,7 @@ class Applications extends React.Component {
           github: 'https://github.com/AndrewLo42/wicked-pedals',
           live: 'http://wicked-pedals.andrewclo.com/',
           icon: '/images/minpedal.png',
+          example: './images/wp.gif',
           description: 'Full-stack e-commerce experience for guitar pedals and pedal supplies. Built with React and PostgreSQL'
         },
         {
@@ -35,6 +37,7 @@ class Applications extends React.Component {
           github: 'https://github.com/AndrewLo42/shadow-realmer',
           live: 'http://shadowrealmer.com/',
           icon: '/images/shadowrealmer.png',
+          example: '/images/realmer.gif',
           description: 'A meet up app for trading card players of all kinds; enthusiasts, casuals, and the curious who want to find games to play, find events, trade cards, or just to make new friends. Built with React and PostgreSQL, utilizing various npm packages. '
         }
       ],
@@ -44,6 +47,7 @@ class Applications extends React.Component {
       }
     };
     this.toggleAppBasket = this.toggleAppBasket.bind(this);
+    this.basketFade = this.basketFade.bind(this);
   }
 
   toggleAppBasket(appId) {
@@ -54,10 +58,17 @@ class Applications extends React.Component {
       });
     } else {
       this.setState({
-        openAppBasket: true,
-        currentApp: this.state.apps[appId]
+        openAppBasket: false
       });
+      setTimeout(this.basketFade, 300, appId);
     }
+  }
+
+  basketFade(appId) {
+    this.setState({
+      openAppBasket: true,
+      currentApp: this.state.apps[appId]
+    });
   }
 
   showAppInfo(classes) {
@@ -81,6 +92,10 @@ class Applications extends React.Component {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Github">Source</Button>
+          </Row>
+          <Row>
+
+            <img className="p-2 app-example m-auto img-fluid" src={this.state.currentApp.example}></img>
           </Row>
         </div>
       </Container>

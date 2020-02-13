@@ -35,23 +35,32 @@ function AboutMe() {
               <a href="./assets/Andrew_Lo.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="decoration-none pointer"
+                className="decoration-none pointer mr-2"
                 aria-label="Resume Download"
               >
                 <div className="border-div-small d-flex">
                   <i className="far fa-file-alt about-icon m-auto" />
                 </div>
               </a>
+              <a href="mailto: andrewclo42@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="decoration-none default-nav pointer "
+                aria-label="email">
+                <div className="border-div-small d-flex">
+                  <i className="fas fa-envelope about-icon m-auto"/>
+                </div>
+              </a>
             </div>
           </Col>
-          <Col className="md-8" sm="12">
+          <Col className="description-container" lg="6" md="6" sm="12">
             <div className="d-flex h-100">
               <div className="m-auto">
                 <div className="position-relative d-none d-sm-block slide-in">
                   <h3 className="about-me-title heading mb-4 spread fade-in">About Me</h3>
                 </div>
                 <div className="about-paragraphs slide-in-10">
-                  <p>Hi! My name is Andrew Lo, and I&#39;m a Software Engineer who has a passion for coding and an unyielding thirst for learning.</p>
+                  <p>Hi! I&#39;m  Andrew Lo, and I&#39;m a Software Engineer with has a passion for coding and an unyielding pursuit for learning.</p>
                   <p>I&#39;m well versed in JavaScript (ES5 & ES6), React.js, jQuery, Node.js, Express, SQL, HTML, and CSS. I&#39;m skilled with tools like Git/GitHub, Postman, npm, and Webpack. I&#39;ve had the privilege of working on team-based and solo projects to build full-stack web applications.</p>
                   <p>I&#39;m excited to be an asset to your team!</p>
                 </div>

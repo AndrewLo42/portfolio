@@ -24,7 +24,7 @@ class Welcome extends React.Component {
         {
           src: './images/knee.gif',
           altText: 'knee',
-          caption: 'Visionary'
+          caption: 'Innovator'
         }
       ]
     };
@@ -33,7 +33,7 @@ class Welcome extends React.Component {
   render() {
     return (
       <div className=" welcome-page">
-        <h1 className="ml-4 welcome-message">Welcome to my website!</h1>
+        <h1 className="ml-4 welcome-message">Life is a crazy, mystical thing...</h1>
         <img src="./images/GCwave.jpg" className="welcome-container"></img>
         <Container className=''>
           <Col>

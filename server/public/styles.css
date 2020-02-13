@@ -6,10 +6,15 @@
   font-family: CaviarDreams;
   src: url('./fonts/CaviarDreams.ttf');
 }
+@font-face {
+  font-family: Ancient;
+  src: url('./fonts/AncientAd.ttf');
+}
 
 body {
   background-color: #020531;
   font-family: GeoSans;
+  user-select: none;
 }
 .header-item{
   background-color: #020531;
@@ -38,26 +43,36 @@ body {
 
 }
 .contact-page {
-  background: linear-gradient(5deg, #d9e7ff 0%, #1CB5E0 80% );
-  /* background: linear-gradient(5deg, #e3ffe7 0%, #d9e7ff 100%); */
+  background: linear-gradient(5deg, #ee2dc179 0%, #1CB5E0 80% );
   border-top: 3px solid #3F2B96;
+  user-select: text;
+}
+.bottom-page {
+  border-top: 1px solid lavender;
+  background-color: #020531;
+  min-height: 8vh;
 }
 .footer-container {
-  min-height: 45vh;
+  min-height: 55vh;
+  padding-top: 5vh;
 }
 .welcome-page {
-  background: linear-gradient(5deg, #5441ab 0%, #001D38 90%);
+  background: linear-gradient(5deg, #5441ab 0%, #ee2dc179 90%);
 }
 
 .welcome-title {
+  padding-top: 1.3rem;
   color: lavender;
 }
 .welcome-message {
-  color: #d9e7ff;
+  color: lavender;
+  font-size: 3.2rem;
+
 }
 
 .welcome-container {
-  background-image: url('./images/GCwave.jpg');
+  border-top: 1px solid cyan;
+  border-bottom: 1px solid cyan;
   background-position: center;
   object-fit: contain;
   background-size: contain;
@@ -122,7 +137,6 @@ body {
 .pointer-spin:hover {
   color: pink;
   cursor: pointer;
-  transform: rotate(360deg);
 }
 
 .pointer-spin {
@@ -224,6 +238,12 @@ a:hover::after,
   transform: translateY(10px);
 }
 
+.app-example {
+  margin: auto;
+  height: 45vh;
+
+}
+
 .app-btn {
   font-size: 1.5rem;
 }
@@ -244,7 +264,7 @@ a:hover::after,
   color: #99e4a4;
 }
 .app-basket {
-  transition: opacity 0.5s;
+  transition: opacity 0.3s;
   opacity: 1;
   border: 1px solid #9984F1;
   width: 75%;
@@ -344,13 +364,27 @@ a:hover::after,
 }
 
 .footer-title {
-  font-size: 2.5rem;
-  font-weight: 500;
+  font-size: 3rem;
+  font-weight: 750;
   color: #001D38;
 }
 .contact-row {
   color: #5441ab;
-  font-size: 1.2em;
+  font-size: 1.4em;
+}
+.menu-links {
+  color: lavender;
+    margin-top: 4rem;
+}
+.footer-icon {
+  padding-right: 3rem;
+  transition: .25s;
+  font-size: 3.5rem;
+  color: #121718;
+}
+.footer-icon:hover {
+  transform: scale(1.1);
+  color: #3d71a9;
 }
 
 .slide-in {
@@ -359,6 +393,15 @@ a:hover::after,
 
 .fade-in {
   animation: fade-in 1s;
+}
+
+.smash-quote {
+  opacity: 0;
+  transition: .5s;
+}
+
+.smash-quote:hover{
+  opacity: 100;
 }
 @media (max-height: 414px){
   .welcome-container{
