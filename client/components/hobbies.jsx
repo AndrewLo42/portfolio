@@ -11,7 +11,7 @@ function BottomBar() {
       <Container className="bottom-container" id="contact">
         <Col className="bottom-title text-center">
         </Col>
-        <Row className="mt-2 justify-content-center contact-row">
+        <Row className="credits-bar mt-2 justify-content-center contact-row">
           <div>© Andrew Lo 2020</div>
         </Row>
         <div className="pt-3 footer_top">

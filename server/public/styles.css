@@ -28,23 +28,23 @@ body {
 }
 .skills-page {
   border-top: 3px solid lavender;
-  background: linear-gradient(5deg, #437380 0%, #001D38 60%);
+  background: linear-gradient(5deg, #001D38 20%, #1CB5E0 100%);
   padding-top: 5vh;
   color: lavender;
 }
 .tools-page {
   border-top: 3px solid lavender;
-  background: linear-gradient(5deg, #001D38 0%, #437380 100%);
+  background: linear-gradient(-5deg, #437380 0%, #001D38 80%);
   padding-top: 5vh;
 }
 .apps-page {
   border-top: 3px solid lavender;
-  background: linear-gradient(3deg, #1CB5E0 0%, #001D38 65%);
+  background: linear-gradient(3deg, #1CB5E0 0%, #001D38 60%);
 
 }
 .contact-page {
-  background: linear-gradient(5deg, #ee2dc179 0%, #1CB5E0 80% );
-  border-top: 3px solid #3F2B96;
+  background: linear-gradient(-5deg, #d526ac6d 0%,#437380 60% );
+  border-top: 3px solid lavender;
   user-select: text;
 }
 .bottom-page {
@@ -228,6 +228,7 @@ a:hover::after,
 }
 
 .app-card:hover {
+  cursor: pointer;
   border: 1px solid #99e4a4;
   background-color: #186982;
   color: #00ffffcd;
@@ -345,6 +346,10 @@ a:hover::after,
 
 }
 
+.skills-header {
+  color: #020531;
+}
+
 .skills-card {
   /* background-color: #3c159878; */
   background-color: #252d83;
@@ -362,10 +367,10 @@ a:hover::after,
 .footer-title {
   font-size: 3rem;
   font-weight: 750;
-  color: #001D38;
+  color: #2bcded;
 }
 .contact-row {
-  color: #5441ab;
+  color: #99e4a4;
   font-size: 1.4em;
 }
 .menu-links {
@@ -373,14 +378,16 @@ a:hover::after,
     margin-top: 4rem;
 }
 .footer-icon {
-  padding-right: 3rem;
   transition: .25s;
   font-size: 3.5rem;
-  color: #121718;
+  color: #25bbd8;
 }
 .footer-icon:hover {
   transform: scale(1.1);
-  color: #3d71a9;
+  color: #397cc4;
+}
+.credits-bar{
+  color: lavender;
 }
 
 .slide-in {
@@ -436,8 +443,8 @@ a:hover::after,
 .fade-in-section {
   opacity: 0;
   visibility: hidden;
-  transition: opacity 1.2s ease-out, transform .6s ease-out,
-    visibility 1.2s ease-out;
+  transition: opacity 1s ease-out, transform .5s ease-out,
+    visibility 1s ease-out;
   will-change: opacity, transform, visibility;
 }
 .fade-in-section.is-visible {
