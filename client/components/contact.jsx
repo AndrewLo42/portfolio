@@ -32,7 +32,7 @@ function ContactFooter() {
                   <a href="https://www.linkedin.com/in/AndrewCLo/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="decoration-none default-nav contact-linkedin pointer mr-2"
+                    className="mr-5 decoration-none default-nav contact-linkedin pointer mr-2"
                     aria-label="LinkedIn">
                     <div className="d-flex">
                       <i className="fab fa-linkedin footer-icon m-auto" />
@@ -41,7 +41,7 @@ function ContactFooter() {
                   <a href="https://github.com/andrewlo42"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="decoration-none default-nav contact-github pointer mr-2"
+                    className="mr-5 decoration-none default-nav contact-github pointer mr-2"
                     aria-label="Github">
                     <div className="border-div-small d-flex">
                       <i className="fab fa-github footer-icon m-auto" />

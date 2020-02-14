@@ -65,6 +65,18 @@ class NavBar extends React.Component {
                 </NavItem>
                 <NavItem className="ml-md-5">
                   <Link activeClass="active"
+                    to="applications"
+                    spy={true}
+                    smooth={true}
+                    offset={offset}
+                    duration={1000}
+                    className="pointer-spin px-0 nav-link"
+                    onClick={this.handleToggle}>
+                    Applications
+                  </Link>
+                </NavItem>
+                <NavItem className="ml-md-5">
+                  <Link activeClass="active"
                     to="skills"
                     spy={true}
                     smooth={true}
@@ -85,18 +97,6 @@ class NavBar extends React.Component {
                     className="pointer-spin px-0 nav-link"
                     onClick={this.handleToggle}>
                     Tools
-                  </Link>
-                </NavItem>
-                <NavItem className="ml-md-5">
-                  <Link activeClass="active"
-                    to="applications"
-                    spy={true}
-                    smooth={true}
-                    offset={offset}
-                    duration={1000}
-                    className="pointer-spin px-0 nav-link"
-                    onClick={this.handleToggle}>
-                    Applications
                   </Link>
                 </NavItem>
                 <NavItem className="ml-md-5">

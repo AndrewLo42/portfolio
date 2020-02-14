@@ -20,9 +20,9 @@ class App extends React.Component {
     const pages = [
       welcome,
       about,
+      apps,
       skills,
       tools,
-      apps,
       contact
     ];
 
