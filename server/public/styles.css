@@ -71,15 +71,15 @@ body {
 }
 
 .welcome-container {
-  background-image: url('./images/GCwave.jpg');
+  background-image: url('./images/dice.jpg');
   border-top: 1px solid cyan;
   border-bottom: 1px solid cyan;
   background-position: center;
   object-fit: contain;
-  background-size: contain;
-  background-repeat: repeat-x;
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 100%;
-  min-height: 25vh;
+  min-height: 36vh;
   /* animation: slide 10s linear infinite; */
 
 }
