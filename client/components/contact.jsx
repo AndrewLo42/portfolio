@@ -14,14 +14,25 @@ function ContactFooter() {
           Contact Me
         </Col>
         <Row className="justify-content-center contact-row">
-          <p className="text-center mb-md-0 mx-4">
-            <i className="fas fa-map-marker-alt mr-2" />Orange County
+          <p className="text-center mb-md-0 mx-3">
+            <a href="https://www.google.com/maps/place/Orange+County,+CA/@33.6410077,-118.0496294,10z/data=!3m1!4b1!4m5!3m4!1s0x80dc925c54d5f7cf:0xdea6c3618ff0d607!8m2!3d33.7174708!4d-117.8311428"
+              className="pointer"
+              target="_blank"
+              rel="noopener noreferrer">
+              <i className="fas fa-map-marker-alt mr-2" />Orange County
+            </a>
           </p>
-          <p className="text-center mb-md-0 mx-4">
-            <i className="fas fa-envelope solid mr-2" />AndrewCLo42@gmail.com
+          <p className="text-center mb-md-0 mx-3">
+            <a href="mailto:andrewclo42@gmail.com"
+              className="pointer">
+              <i className="fas fa-envelope solid mr-2" />AndrewCLo42@gmail.com
+            </a>
           </p>
-          <p className="text-center mb-md-0 mx-4">
-            <i className="fas fa-phone mr-2" />(949)-232-5930
+          <p className="text-center mb-md-0 mx-3">
+            <a href="tel:+19492027141"
+              className="pointer">
+              <i className="fas fa-phone mr-2" />(949)-232-5930
+            </a>
           </p>
         </Row>
         <div className="pt-3 footer_top">
@@ -62,7 +73,7 @@ function ContactFooter() {
           </div>
         </div>
       </Container>
-      <Col className=" justify-content-center ">
+      <Col className=" mt-1 justify-content-center ">
         <div className="mb-2 boxed-btn3 text-center" href="#">
           <div className="smash-quote">
             <div>... and sometimes you just go out like a buster.</div>
@@ -70,7 +81,6 @@ function ContactFooter() {
             <img className="smash-ball" src="https://img.icons8.com/ios-filled/50/000000/super-smash-bros.png">
             </img>
           </div>
-
         </div>
         <div className="hover-me"></div>
       </Col>

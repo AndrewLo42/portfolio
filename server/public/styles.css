@@ -77,9 +77,20 @@ body {
   background-position: center;
   object-fit: contain;
   background-size: contain;
-  background-repeat: repeat;
+  background-repeat: repeat-x;
   width: 100%;
   min-height: 25vh;
+  /* animation: slide 10s linear infinite; */
+
+}
+
+@keyframes slide {
+  0%{
+    transform: translate3d(0, 0, 0);
+  }
+  100%{
+    transform: translate3d(-600px, 0, 0);
+  }
 }
 .carousel-img {
   height: 50vh;
@@ -292,6 +303,8 @@ a:hover::after,
 }
 .big-app-card {
   background-color: steelblue;
+  color: #99e4a4;
+  font-size: 1.1rem;
 }
 .card-footer {
   background-color: #3e719b;
@@ -311,7 +324,7 @@ a:hover::after,
   color: lavender;
 }
 .about-paragraphs {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 .color-pattern {
@@ -373,6 +386,12 @@ a:hover::after,
   color: #99e4a4;
   font-size: 1.4em;
 }
+.contact-row a {
+  color: #99e4a4 !important;
+}
+.contact-row a:hover {
+  color: lavender !important;
+}
 .menu-links {
   color: lavender;
     margin-top: 4rem;
@@ -418,8 +437,12 @@ a:hover::after,
  .carousel-img {
     margin: auto;
   }
-
+  .about-paragraphs {
+    font-size: 1.4rem;
+  }
 }
+
+
 @media (max-width: 575px) {
   .carousel-img {
     width: 100%;

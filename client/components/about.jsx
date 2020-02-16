@@ -9,8 +9,8 @@ function AboutMe() {
   return (
     <div className="about-page about-description content-div" id="about">
       <Container className="">
-        <Row>
-          <Col className="" md="6">
+        <Row className="justify-content-center">
+          <Col className="" lg="6" md="10" sm="11">
             <h3 className="mb-4 d-block d-sm-none text-md-left text-center fade-in slide-in-10 about-me-title">About Me</h3>
             <img className="my-img my-2 img-fluid fade-in slide-in d-flex" src="./images/coffeekid.jpg" alt="profile" />
             <div className="about-icons my-3 d-flex justify-content-center fade-in slide-in">
@@ -53,7 +53,7 @@ function AboutMe() {
               </a>
             </div>
           </Col>
-          <Col className="description-container" lg="6" md="6" sm="12">
+          <Col className="description-container" lg="6" md="12" sm="12">
             <div className="d-flex h-100">
               <div className="m-auto">
                 <div className="position-relative d-none d-sm-block slide-in">
