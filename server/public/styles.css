@@ -72,26 +72,18 @@ body {
 
 .welcome-container {
   background-image: url('./images/dice.jpg');
-  border-top: 2px solid cyan;
-  border-bottom: 2px solid cyan;
+  border-top: 2px solid #56e4e4;
+  border-bottom: 2px solid #56e4e4;
   background-position: center;
   object-fit: contain;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
   min-height: 36vh;
-  /* animation: slide 10s linear infinite; */
-
+  box-shadow: inset 5px 5px 10px #5092c7,
+            inset -5px -5px 10px #6cc8ff;
 }
 
-@keyframes slide {
-  0%{
-    transform: translate3d(0, 0, 0);
-  }
-  100%{
-    transform: translate3d(-600px, 0, 0);
-  }
-}
 .carousel-img {
   height: 50vh;
   width: 50vh;
@@ -256,6 +248,7 @@ a:hover::after,
 
 .app-btn {
   font-size: 1.5rem;
+  border: .5px solid rgb(157, 157, 167);
 }
 
 .app-btn:hover {
@@ -287,29 +280,37 @@ a:hover::after,
 }
 
 .project-icon {
-  height: 7vh;
-  width: 7vh;
+  height: 7.5vh;
+  width: 7.5vh;
   margin-top: 5%;
-  background-color: steelblue;
+  background-color: #4682b4;
   margin: auto;
   border: 1px solid #3F2B96;
   border-radius: 50%;
+  background: #4682b4;
+  box-shadow: inset -10px -10px 20px #447cab,
+              inset 10px 10px 20px #6cc8ff;
 }
 
 .big-app-icon {
   height: 20vh;
   width: 20vh;
   margin-top: 5%;
-  background-color: rgb(100, 162, 213);
+  background-color: #64a2d5;
   margin: auto;
+  border-radius: 22px;
+  background: #64a2d5;
+  box-shadow: inset -10px -10px 20px #467195,
+              inset 10px 10px 20px #82d3ff;
 }
 .big-app-card {
   background-color: steelblue;
   color: #99e4a4;
-  font-size: 1.1rem;
+  font-size: 1.4rem;
 }
 .card-footer {
   background-color: #3e719b;
+  font-size: 1.2rem;
 }
 
 .welcome-page,
@@ -392,7 +393,7 @@ a:hover::after,
 .footer-title {
   font-size: 3rem;
   font-weight: 750;
-  color: #2bcded;
+  color: #44ddfc;
 }
 .contact-row {
   color: #99e4a4;
@@ -507,4 +508,13 @@ a:hover::after,
 @keyframes slide-out {
   0% { transform: translateY(0%); }
   100% { transform: translateY(100%); }
+}
+
+@keyframes slide {
+  0%{
+    transform: translate3d(0, 0, 0);
+  }
+  100%{
+    transform: translate3d(-600px, 0, 0);
+  }
 }
