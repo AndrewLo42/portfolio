@@ -23,23 +23,23 @@ body {
   font-size: 1.3rem;
 }
 .about-page {
-  border-top: 3px solid lavender;
+  border-top: 3.3px solid lavender;
   background: linear-gradient(5deg, #001D38 0%, #5441ab  100%);
 }
 .skills-page {
-  border-top: 3px solid lavender;
-  background: linear-gradient(5deg, #001D38 20%, #1CB5E0 100%);
+  border-top: 3.3px solid lavender;
+  background-color: #1aa4cbc8;
   padding-top: 5vh;
   color: lavender;
 }
 .tools-page {
-  border-top: 3px solid lavender;
-  background: linear-gradient(-5deg, #437380 0%, #001D38 80%);
+  border-top: 3.3px solid lavender;
+  background-color: #437380;
   padding-top: 5vh;
 }
 .apps-page {
-  border-top: 3px solid lavender;
-  background: linear-gradient(3deg, #1CB5E0 0%, #001D38 60%);
+  border-top: 3.3px solid lavender;
+  background-color: rgb(42, 7, 113);
 
 }
 .contact-page {
@@ -72,8 +72,8 @@ body {
 
 .welcome-container {
   background-image: url('./images/dice.jpg');
-  border-top: 1px solid cyan;
-  border-bottom: 1px solid cyan;
+  border-top: 2px solid cyan;
+  border-bottom: 2px solid cyan;
   background-position: center;
   object-fit: contain;
   background-size: cover;
@@ -136,7 +136,7 @@ body {
 }
 
 .my-img {
-  border: 1px solid steelblue;
+  border: 2px solid steelblue;
 }
 
 .pointer:hover{
@@ -230,18 +230,20 @@ a:hover::after,
 
 .app-card {
   border: 1px solid lavender;
-  background-color: #2f9aba;
   width: 35%;
   height: 15rem;
   font-size: 2rem;
   transition: .5s;
-  color: #020531;
+  color: #02041c;
+  border-radius: 5px;
+  background: linear-gradient(315deg, #069f9f, #07bdbd);
+  box-shadow: 5px 5px 17px black;
 }
 
 .app-card:hover {
   cursor: pointer;
   border: 1px solid #99e4a4;
-  background-color: #186982;
+  background: #186982;
   color: #00ffffcd;
   transform: translateY(10px);
 }
@@ -354,27 +356,37 @@ a:hover::after,
 .tools-card {
   text-align: center;
   font-family: CaviarDreams;
-  border: 1px solid steelblue;
+  border: 1px solid #a3cae9;
   transition: .75s;
-
 }
 
-.skills-header {
-  color: #020531;
+.skills-header,
+.tools-header {
+  color: lavender;
+  font-weight: 900;
 }
 
 .skills-card {
   /* background-color: #3c159878; */
-  background-color: #252d83;
+  border: 1px solid #ffffff95;
+  /* background-color: #252d83; */
   color: #00ffffe7;
-  padding-bottom: 1.5rem;
-  font-size: 7vh;
+  padding-bottom: 1rem;
+  font-size: 8vh;
+  border-radius: 22px;
+  background: #252d83;
+  box-shadow: inset -5px -5px 17px #1a205c,
+              inset 5px 5px 17px #303baa;
 }
 
 .tools-card {
-  font-size: 6vh;
-  color: #9984F1;
-  background-color: #412859;
+  font-size: 7vh;
+  color: whitesmoke;
+  /* background-color: #493260; */
+  border-radius: 22px;
+  background: #493260;
+  box-shadow: inset -5px -5px 17px #3a284c,
+              inset 5px 5px 17px #583d74;
 }
 
 .footer-title {
@@ -385,12 +397,13 @@ a:hover::after,
 .contact-row {
   color: #99e4a4;
   font-size: 1.4em;
+  font-weight: 700;
 }
 .contact-row a {
-  color: #99e4a4 !important;
+  color: #fafafe !important;
 }
 .contact-row a:hover {
-  color: lavender !important;
+  color: #99e4a4!important;
 }
 .menu-links {
   color: lavender;
