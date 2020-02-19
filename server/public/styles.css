@@ -346,6 +346,7 @@ a:hover::after,
   font-size: 3.25rem;
   color: #07b1b1;
   transition: .25s;
+
 }
 
 .about-icon:hover {
@@ -439,6 +440,67 @@ a:hover::after,
 .smash-quote:hover{
   opacity: 100;
 }
+
+.scroll{
+  right: 36px;
+  bottom: 36px;
+  height: 110px;
+  width: 8px;
+  writing-mode: vertical-lr;
+  text-orientation: sideways;
+  vertical-align: inherit;
+  position: fixed;
+  z-index: 888;
+  color: lavender;
+  text-align: center;
+}
+.scroll:before {
+  height: 60px;
+  width: 2px;
+  opacity: .25;
+}
+.scroll:after {
+  animation: slide;
+  transition: background 0.3s cubic-bezier(0.215, 0.6, 0.3555, 1);
+  transition-property: background;
+  transition-duration: 0.25s;
+
+}
+.scroll:before,
+.scroll:after {
+  content:'';
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: cyan;
+  /* animation: scroll-animation 1.5s infinite; */
+}
+
+.aside {
+  content: "";
+  display: block;
+  position: fixed;
+  right: 25px;
+  bottom: 50vh;
+  height: 110px;
+  width: 8px;
+  z-index: 999;
+}
+
+.aside-icon {
+  font-size: 1.8rem;
+  border-radius: 50%;
+  text-shadow: 5px 5px 10px black;
+
+}
+
+.aside-icon:hover {
+  transition: all 0.2s ease-in;
+  color: cyan;
+  opacity: .5;
+}
+
 @media (max-height: 414px){
   .welcome-container{
     display: none;
@@ -516,5 +578,14 @@ a:hover::after,
   }
   100%{
     transform: translate3d(-600px, 0, 0);
+  }
+}
+
+@keyframes scroll-animation {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0 , -50px);
   }
 }
