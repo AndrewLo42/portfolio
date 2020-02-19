@@ -7,6 +7,8 @@ import Welcome from './welcome';
 import Skills from './skills-page';
 import Tools from './tools-page';
 import FadeInPage from './fade-in-pages';
+import ScrollIndicator from './scroll-indicator';
+import Aside from './aside';
 
 class App extends React.Component {
 
@@ -36,6 +38,8 @@ class App extends React.Component {
     return (
       <>
         <NavBar />
+        <Aside />
+        <ScrollIndicator />
         {this.renderPages()}
       </>
     );

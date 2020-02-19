@@ -33,6 +33,7 @@ class Welcome extends React.Component {
   render() {
     return (
       <div className=" welcome-page">
+        {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fillOpacity="1" d="M0,224L120,240C240,256,480,288,720,266.7C960,245,1200,171,1320,133.3L1440,96L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg> */}
         <h1 className="ml-4 welcome-message">Life is this crazy, mystical thing...</h1>
         <div className="welcome-container">
         </div>
