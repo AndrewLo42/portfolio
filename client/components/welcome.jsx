@@ -39,7 +39,7 @@ class Welcome extends React.Component {
         </div>
         <Container className=''>
           <Col>
-            <h1 className="welcome-title">My name is Andrew Lo, and I&#39;m a ...</h1>
+            <h1 className="mt-2 p-1 welcome-title">My name is Andrew Lo, and I&#39;m a ...</h1>
           </Col>
           <Row className="row justify-content-center">
             <CarouselComponent slides={this.state.carouselSlides}/>

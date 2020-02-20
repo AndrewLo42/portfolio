@@ -48,7 +48,30 @@ class NavBar extends React.Component {
               <img src="./images/blip.png"
                 className="img-fluid header-logo"/>
             </NavbarBrand>
-            <NavbarToggler onClick={this.handleToggle} navbar="true" > <i className="navbar-icon fas fa-bars"></i></NavbarToggler>
+            <div className="mobile-header-icons">
+              <a href="https://github.com/andrewlo42"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="decoration-none default-nav contact-github pointer mr-2"
+                aria-label="Github">
+                <div className="border-div-small d-flex">
+                  <i className="fab fa-github aside-icon m-auto" />
+                </div>
+              </a>
+              <a href="https://www.linkedin.com/in/AndrewCLo/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="decoration-none default-nav contact-linkedin pointer mr-2"
+                aria-label="LinkedIn">
+                <div className="d-flex">
+                  <i className="fab fa-linkedin aside-icon m-auto" />
+                </div>
+              </a>
+            </div>
+            <NavbarToggler onClick={this.handleToggle} navbar="true" >
+              <i className="navbar-icon fas fa-bars"></i>
+            </NavbarToggler>
+
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto" navbar>
                 <NavItem>
