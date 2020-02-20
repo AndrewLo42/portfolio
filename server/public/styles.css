@@ -57,7 +57,8 @@ body {
   padding-top: 5vh;
 }
 .welcome-page {
-  background: linear-gradient(5deg, #5441ab 0%, #ee2dc179 90%);
+  background-color: #5441ab;
+  /* background: linear-gradient(5deg, #5441ab 0%, #ee2dc179 90%); */
 }
 
 .welcome-title {
@@ -99,6 +100,13 @@ body {
 .carousel-indicators {
   color: #00ffffcd;
   font-size: 2rem;
+}
+
+.carousel-caption {
+border-radius: 5px;
+background: #5441ab;
+box-shadow: inset 7px 7px 17px #4c3b9a,
+            inset -7px -7px 17px #5c48bc;
 }
 
 .indicator-container {
@@ -496,8 +504,8 @@ a:hover::after,
 }
 
 .aside-icon:hover {
-  transition: all 0.2s ease-in;
-  color: cyan;
+  transition: .2s ease-out;
+  color: #ee2dc179 !important;
   opacity: .5;
 }
 
@@ -588,4 +596,73 @@ a:hover::after,
   50% {
     transform: translate(0 , -50px);
   }
+}
+
+@keyframes drift {
+  from { transform: rotate(0deg); }
+  from { transform: rotate(360deg); }
+}
+
+.box {
+  width: 300px;
+  height: 300px;
+  border-radius: 5px;
+  box-shadow: 0 2px 30px rgba(black, .2);
+  background: lighten(#f0f4c3, 10%);
+  position: relative;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+}
+
+.wave {
+  opacity: .4;
+  position: absolute;
+  top: 3%;
+  left: 50%;
+  background: #0af;
+  width: 500px;
+  height: 500px;
+  margin-left: -250px;
+  margin-top: -250px;
+  transform-origin: 50% 48%;
+  border-radius: 50%;
+  animation: drift 3000ms infinite linear;
+}
+
+.wave.third {
+  animation: drift 5000ms infinite linear;
+}
+
+.wave.second {
+  animation: drift 7000ms infinite linear;
+  opacity: .1;
+  background: yellow;
+}
+
+.box:after {
+  content: '';
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(#e8a, 1), rgba(#def, 0) 80%, rgba(white, .5));
+  z-index: 11;
+  transform: translate3d(0, 0, 0);
+}
+
+.wavytitle {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  line-height: 300px;
+  text-align: center;
+  transform: translate3d(0, 0, 0);
+  color: white;
+  letter-spacing: .4em;
+  font-size: 24px;
+  text-shadow: 0 1px 0 rgba(black, .1);
+  text-indent: .3em;
 }
