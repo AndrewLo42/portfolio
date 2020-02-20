@@ -62,8 +62,13 @@ body {
 }
 
 .welcome-title {
+  text-align: center;
   padding-top: 1.3rem;
   color: lavender;
+  border-radius: 5px;
+  background: #5441ab;
+  box-shadow:  -20px 20px 60px #403182,
+              20px -20px 60px #6851d4;
 }
 .welcome-message {
   color: lavender;
@@ -74,7 +79,7 @@ body {
 .welcome-container {
   background-image: url('./images/dice.jpg');
   border-top: 2px solid #56e4e4;
-  border-bottom: 2px solid #56e4e4;
+  /* border-bottom: 2px solid #bfe8e8; */
   background-position: center;
   object-fit: contain;
   background-size: cover;
@@ -102,12 +107,6 @@ body {
   font-size: 2rem;
 }
 
-.carousel-caption {
-border-radius: 5px;
-background: #5441ab;
-box-shadow: inset 7px 7px 17px #4c3b9a,
-            inset -7px -7px 17px #5c48bc;
-}
 
 .indicator-container {
   z-index: 30;
@@ -509,6 +508,10 @@ a:hover::after,
   opacity: .5;
 }
 
+.mobile-header-icons {
+  display: none;
+}
+
 @media (max-height: 414px){
   .welcome-container{
     display: none;
@@ -523,6 +526,14 @@ a:hover::after,
   }
   .about-paragraphs {
     font-size: 1.4rem;
+  }
+
+  .mobile-header-icons {
+    display: flex;
+  }
+
+  .aside{
+    display: none;
   }
 }
 
