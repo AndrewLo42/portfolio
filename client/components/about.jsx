@@ -12,7 +12,7 @@ function AboutMe() {
         <Row className="justify-content-center">
           <Col className="" lg="6" md="10" sm="11">
             <h3 className="mb-4 d-block d-sm-none text-md-left text-center fade-in slide-in-10 about-me-title">About Me</h3>
-            <img className="my-img my-2 img-fluid fade-in slide-in d-flex" src="./images/staircheese.jpg" alt="profile" />
+            <img className="my-img my-2 img-fluid fade-in slide-in d-flex" src="./images/stairprof.jpg" alt="profile" />
             <div className="about-icons my-3 d-flex justify-content-center fade-in slide-in">
               <a href="https://github.com/andrewlo42"
                 target="_blank"
