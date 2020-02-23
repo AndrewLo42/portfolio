@@ -1,5 +1,6 @@
 import React from 'react';
 import {
+  Row,
   Navbar,
   NavbarToggler,
   Container,
@@ -45,8 +46,11 @@ class NavBar extends React.Component {
               }
             }}
             className="pointer decoration-none">
-              <img src="./images/blip.png"
-                className="img-fluid header-logo"/>
+              <Row className="pl-2">
+                <img src="./images/die20.png"
+                  className="img-fluid header-logo"/>
+                <div className="text-center m-auto">ALo</div>
+              </Row>
             </NavbarBrand>
             <div className="mobile-header-icons">
               <a href="https://github.com/andrewlo42"
@@ -65,6 +69,16 @@ class NavBar extends React.Component {
                 aria-label="LinkedIn">
                 <div className="d-flex">
                   <i className="fab fa-linkedin aside-icon m-auto" />
+                </div>
+              </a>
+              <a href="./assets/Andrew_Lo.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="decoration-none pointer mr-2"
+                aria-label="Resume Download"
+              >
+                <div className="border-div-small d-flex">
+                  <i className="far fa-file-alt aside-icon m-auto" />
                 </div>
               </a>
             </div>

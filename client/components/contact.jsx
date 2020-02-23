@@ -10,10 +10,10 @@ function ContactFooter() {
   return (
     <div className="contact-page">
       <Container className="footer-container" id="contact">
-        <Col className="footer-title text-center">
+        <Col className="mb-2 footer-title text-center">
           Contact Me
         </Col>
-        <Row className="justify-content-center contact-row">
+        <Row className="mt-5 justify-content-center contact-row">
           <p className="text-center mb-md-0 mx-3">
             <a href="https://www.google.com/maps/place/Orange+County,+CA/@33.6410077,-118.0496294,10z/data=!3m1!4b1!4m5!3m4!1s0x80dc925c54d5f7cf:0xdea6c3618ff0d607!8m2!3d33.7174708!4d-117.8311428"
               className="pointer"
@@ -35,7 +35,7 @@ function ContactFooter() {
             </a>
           </p>
         </Row>
-        <div className="pt-3 footer_top">
+        <div className="pt-2 footer_top">
           <div className="container">
             <Row className="justify-content-center row">
               <div className="">
