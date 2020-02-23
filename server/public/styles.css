@@ -386,6 +386,13 @@ a:hover::after,
   background: #252d83;
   box-shadow: inset -5px -5px 17px #1a205c,
               inset 5px 5px 17px #303baa;
+  transition: .25s;
+}
+
+.skills-card:hover {
+  background: #252d83;
+  box-shadow: inset -5px -5px 17px #303baa,
+              inset 5px 5px 17px #1a205c;
 }
 
 .tools-card {
@@ -395,7 +402,7 @@ a:hover::after,
   border-radius: 22px;
   background: #493260;
   box-shadow: inset -5px -5px 17px #3a284c,
-              inset 5px 5px 17px #583d74;
+              inset 5px 5px 17px #5f437d;
 }
 
 .footer-title {

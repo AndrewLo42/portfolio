@@ -21,6 +21,16 @@ function Aside(props) {
           <i className="fab fa-github aside-icon m-auto" />
         </div>
       </a>
+      <a href="./assets/Andrew_Lo.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="mt-2 decoration-none default-nav pointer pl-1"
+        aria-label="Resume Download"
+      >
+        <div className="border-div-small d-flex">
+          <i className="far fa-file-alt aside-icon m-auto" />
+        </div>
+      </a>
     </div>
 
   );
