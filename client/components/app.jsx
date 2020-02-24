@@ -10,6 +10,8 @@ import FadeInPage from './fade-in-pages';
 import ScrollIndicator from './scroll-indicator';
 import Aside from './aside';
 
+// import MailMe from './message-me';
+
 class App extends React.Component {
 
   renderPages() {

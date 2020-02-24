@@ -403,6 +403,13 @@ a:hover::after,
   background: #493260;
   box-shadow: inset -5px -5px 17px #3a284c,
               inset 5px 5px 17px #5f437d;
+  transition: .25s;
+}
+
+.tools-card:hover {
+  background: #493260;
+  box-shadow: inset -5px -5px 17px #5f437d,
+              inset 5px 5px 17px #3a284c;
 }
 
 .footer-title {
