@@ -531,6 +531,15 @@ a:hover::after,
     display: none;
   }
 }
+
+@media(max-width: 1024px){
+  .about-paragraphs {
+    font-size: 1.8rem;
+  }
+  .description-container{
+    margin-left: 2rem;
+  }
+}
 @media (max-width: 768px) {
   .mobile-skills-row {
     justify-content: space-evenly;
@@ -541,7 +550,14 @@ a:hover::after,
   .about-paragraphs {
     font-size: 1.4rem;
   }
+  .app-card {
+    font-size: 1.5rem;
+  }
 
+}
+
+
+@media (max-width: 575px) {
   .mobile-header-icons {
     display: flex;
   }
@@ -549,10 +565,7 @@ a:hover::after,
   .aside{
     display: none;
   }
-}
 
-
-@media (max-width: 575px) {
   .carousel-img {
     width: 100%;
   }
