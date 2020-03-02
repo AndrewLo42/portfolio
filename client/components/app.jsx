@@ -18,13 +18,13 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      view: 'light'
+      view: 'dark'
     };
     this.toggleColor = this.toggleColor.bind(this);
   }
 
   renderPages() {
-    const welcome = <Welcome />;
+    const welcome = <Welcome mode={this.state.view}/>;
     const about = <AboutMe />;
     const skills = <Skills />;
     const tools = <Tools />;
@@ -40,13 +40,13 @@ class App extends React.Component {
     ];
 
     const pageList = pages.map(page =>
-      <FadeInPage key={pages.indexOf(page)} section={page} mode={this.state.view}/>
+      <FadeInPage key={pages.indexOf(page)} section={page} />
     );
     return pageList;
   }
 
-  toggleColor() {
-
+  toggleColor(color) {
+    this.setState({ view: color });
   }
 
   render() {
@@ -56,7 +56,7 @@ class App extends React.Component {
         <Context.Provider value={{
           view
         }} />
-        <NavBar mode={this.state.view}/>
+        <NavBar mode={this.state.view} toggleColor={this.toggleColor}/>
         <Aside />
         <ScrollIndicator />
         {this.renderPages()}

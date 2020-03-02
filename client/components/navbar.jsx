@@ -7,7 +7,8 @@ import {
   Collapse,
   Nav,
   NavItem,
-  NavbarBrand
+  NavbarBrand,
+  Button
 } from 'reactstrap';
 import {
   Link,
@@ -21,12 +22,17 @@ class NavBar extends React.Component {
       isOpen: false
     });
     this.handleToggle = this.handleToggle.bind(this);
+    this.handleColorToggle = this.handleColorToggle.bind(this);
   }
 
   handleToggle() {
     if (window.innerWidth < 768) {
       this.setState({ isOpen: !this.state.isOpen });
     }
+  }
+
+  handleColorToggle() {
+    this.props.toggleColor(event.target.name);
   }
 
   render() {
@@ -151,6 +157,12 @@ class NavBar extends React.Component {
               </Nav>
             </Collapse>
           </Navbar>
+          <div className="color-container text-center">
+            <div className="text-center">
+              <Button name="dark" type="checkbox" className="dark-color-button text-center mr-1" onClick={() => this.handleColorToggle()}> D </Button>
+              <Button name="light" type="checkbox" className="light-color-button text-center" onClick={() => this.handleColorToggle()}> L </Button>
+            </div>
+          </div>
         </Container>
       </>
     );

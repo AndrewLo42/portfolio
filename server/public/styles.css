@@ -10,6 +10,9 @@
   font-family: Ancient;
   src: url('./fonts/AncientAd.ttf');
 }
+* {
+  transition: .5s;
+}
 
 body {
   background-color: #020531;
@@ -56,9 +59,12 @@ body {
   min-height: 55vh;
   padding-top: 5vh;
 }
-.welcome-page {
+.welcome-page.dark {
   background-color: #5441ab;
   /* background: linear-gradient(5deg, #5441ab 0%, #ee2dc179 90%); */
+}
+.welcome-page.light {
+  background-color: white;
 }
 
 .welcome-title {
@@ -70,10 +76,25 @@ body {
   box-shadow:  -20px 20px 60px #403182,
               20px -20px 60px #6851d4;
 }
-.welcome-message {
+.welcome-title.dark {
+  background: #5441ab;
+  box-shadow:  -20px 20px 60px #403182,
+              20px -20px 60px #6851d4;
+}
+.welcome-title.light {
+  color: rgba(26, 24, 24, 0.728);
+  background: #e8e6f0;
+  box-shadow:  10px 10px 20px #7d7c82,
+             -10px -10px 20px #ffffff;
+}
+
+.welcome-message.light {
+  color: black;
+  font-size: 3.2rem;
+}
+.welcome-message.dark {
   color: lavender;
   font-size: 3.2rem;
-
 }
 
 .welcome-container {
@@ -524,6 +545,25 @@ a:hover::after,
 
 .mobile-header-icons {
   display: none;
+}
+
+.color-container {
+  content: "";
+  top: 90px;
+  display: block;
+  position: fixed;
+  background-color: transparent !important;
+}
+
+.dark-color-button {
+  width: 2rem;
+  border: 1px cyan solid;
+  background-color: purple;
+}
+.light-color-button {
+  width: 2rem;
+  border: 1px cyan solid;
+  background-color: gray;
 }
 
 @media (max-height: 414px){
