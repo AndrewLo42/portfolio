@@ -1,4 +1,4 @@
-import { React } from 'react';
+import React from 'react';
 import AboutMe from './about';
 import ContactFooter from './contact';
 import NavBar from './navbar';
@@ -11,7 +11,7 @@ import ScrollIndicator from './scroll-indicator';
 import Aside from './aside';
 import Context from './context';
 // import useColorModes from './useMode';
-// const { theme, toggleTheme } = useTheme();
+// const { theme, toggleTheme } = useColorModes();
 
 class App extends React.Component {
 
@@ -20,6 +20,7 @@ class App extends React.Component {
     this.state = {
       view: 'light'
     };
+    this.toggleColor = this.toggleColor.bind(this);
   }
 
   renderPages() {
@@ -42,6 +43,10 @@ class App extends React.Component {
       <FadeInPage key={pages.indexOf(page)} section={page} mode={this.state.view}/>
     );
     return pageList;
+  }
+
+  toggleColor() {
+
   }
 
   render() {

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-function useColorModes() {
+function useColorModes(props) {
   const [theme, setTheme] = useState('light');
   const toggleTheme = () => {
     if (theme === 'light') {
