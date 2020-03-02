@@ -9,10 +9,19 @@ import Tools from './tools-page';
 import FadeInPage from './fade-in-pages';
 import ScrollIndicator from './scroll-indicator';
 import Aside from './aside';
-
-// import MailMe from './message-me';
+import Context from './context';
+// import useColorModes from './useMode';
+// const { theme, toggleTheme } = useColorModes();
 
 class App extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      view: 'light'
+    };
+    this.toggleColor = this.toggleColor.bind(this);
+  }
 
   renderPages() {
     const welcome = <Welcome />;
@@ -31,15 +40,23 @@ class App extends React.Component {
     ];
 
     const pageList = pages.map(page =>
-      <FadeInPage key={pages.indexOf(page)} section={page}/>
+      <FadeInPage key={pages.indexOf(page)} section={page} mode={this.state.view}/>
     );
     return pageList;
   }
 
+  toggleColor() {
+
+  }
+
   render() {
+    const view = this.state.view;
     return (
       <>
-        <NavBar />
+        <Context.Provider value={{
+          view
+        }} />
+        <NavBar mode={this.state.view}/>
         <Aside />
         <ScrollIndicator />
         {this.renderPages()}
