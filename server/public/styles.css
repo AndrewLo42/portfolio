@@ -45,7 +45,7 @@ body {
   padding-top: 5vh;
 }
 .apps-page.light {
-  border-top: 3.3px solid lavender;
+  border-top: 3.3px solid #437380;
   background-color: lavender;
 
 }
@@ -267,8 +267,11 @@ a:hover::after,
   text-decoration: none;
 }
 
-.apps-title {
+.apps-title.dark {
   color: cyan;
+}
+.apps-title.light {
+  color: #1d353c;
 }
 
 .app-card {
@@ -279,15 +282,22 @@ a:hover::after,
   transition: .5s;
   color: #02041c;
   border-radius: 5px;
-  background: linear-gradient(315deg, #069f9f, #07bdbd);
   box-shadow: 5px 5px 17px black;
+}
+.app-card.dark {
+  background: linear-gradient(315deg, #069f9f, #07bdbd);
+}
+.app-card.light {
+  color: black;
+  background: linear-gradient(315deg, #065d9f, #d0dfdf);
+
 }
 
 .app-card:hover {
   cursor: pointer;
   border: 1px solid #99e4a4;
   background: #186982;
-  color: #00ffffcd;
+  /* color: #00ffffcd; */
   transform: translateY(10px);
 }
 
@@ -322,8 +332,13 @@ a:hover::after,
   opacity: 1;
   border: 1px solid #9984F1;
   width: 75%;
-  background: #2f5059;
   border-radius: 5px;
+}
+.app-basket.dark{
+  background: #2f5059;
+}
+.app-basket.light{
+  background: #25aace;
 }
 .app-basket.hide {
   opacity: 0;
