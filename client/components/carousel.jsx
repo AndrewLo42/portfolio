@@ -76,7 +76,7 @@ class CarouselComponent extends React.Component {
       <div className="pt-3 fade-in w-100 carousel-container ">
         <div className="carousel fade-in">
           <div key={this.state.slideIndex} className="row justify-contents-center carousel-slides m-auto">
-            <div className="mt-2 p-1 mx-auto text-center fade-in carousel-caption slide-caption">
+            <div className={`mt-2 p-2 mx-auto text-center fade-in carousel-caption slide-caption ${this.props.mode}`}>
               {this.props.slides[this.state.slideIndex].caption}
             </div>
           </div>
