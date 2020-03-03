@@ -44,7 +44,12 @@ body {
   background-color: #437380;
   padding-top: 5vh;
 }
-.apps-page {
+.apps-page.light {
+  border-top: 3.3px solid lavender;
+  background-color: lavender;
+
+}
+.apps-page.dark {
   border-top: 3.3px solid lavender;
   background-color: #2a0771;
 
@@ -370,7 +375,13 @@ a:hover::after,
 .about-description {
   padding-top: 5vh;
   min-height: 95vh;
+  color: lavender
+}
+.about-paragraphs.dark {
   color: lavender;
+}
+.about-paragraphs.light {
+  color: #040404c9;
 }
 .about-paragraphs {
   font-size: 1.3rem;
@@ -390,14 +401,23 @@ a:hover::after,
 
 .about-icon {
   font-size: 3.25rem;
-  color: #07b1b1;
   transition: .25s;
-
 }
 
-.about-icon:hover {
+.about-icon.light {
+  color: #a4f2b0;
+}
+.about-icon.dark {
+  color: #07b1b1;
+}
+
+.about-icon.dark:hover {
   transform: scale(1.1);
   color: #2a8e8e;
+}
+.about-icon.light:hover {
+  transform: scale(1.1);
+  color: #43dc73cb;
 }
 
 .skills-card,
