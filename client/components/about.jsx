@@ -5,9 +5,9 @@ import {
   Col
 } from 'reactstrap';
 
-function AboutMe() {
+function AboutMe(props) {
   return (
-    <div className="about-page about-description content-div" id="about">
+    <div className={`about-page about-description content-div ${props.mode}`} id="about">
       <Container className="">
         <Row className="justify-content-center">
           <Col className="" lg="6" md="10" sm="11">

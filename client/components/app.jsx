@@ -25,7 +25,7 @@ class App extends React.Component {
 
   renderPages() {
     const welcome = <Welcome mode={this.state.view}/>;
-    const about = <AboutMe />;
+    const about = <AboutMe mode={this.state.view}/>;
     const skills = <Skills />;
     const tools = <Tools />;
     const apps = <Applications />;

@@ -42,7 +42,7 @@ class Welcome extends React.Component {
             <h1 className={`ml-4 mt-2 p-1 welcome-title ${this.props.mode}`}>My name is Andrew Lo, and I&#39;m a ...</h1>
           </Col>
           <Row className="row justify-content-center">
-            <CarouselComponent slides={this.state.carouselSlides}/>
+            <CarouselComponent slides={this.state.carouselSlides} mode={this.props.mode}/>
           </Row>
         </Container>
 

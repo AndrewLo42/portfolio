@@ -25,7 +25,11 @@ body {
   border-bottom: 1.2px solid #302e34b8;
   font-size: 1.3rem;
 }
-.about-page {
+.about-page.light {
+  border-top: 3.3px solid #5441ab;
+  background-color: #a09d9d;
+}
+.about-page.dark {
   border-top: 3.3px solid lavender;
   background: linear-gradient(5deg, #001D38 0%, #5441ab  100%);
 }
@@ -42,7 +46,7 @@ body {
 }
 .apps-page {
   border-top: 3.3px solid lavender;
-  background-color: rgb(42, 7, 113);
+  background-color: #2a0771;
 
 }
 .contact-page {
@@ -64,7 +68,7 @@ body {
   /* background: linear-gradient(5deg, #5441ab 0%, #ee2dc179 90%); */
 }
 .welcome-page.light {
-  background-color: white;
+  background-color: #f2ecec;
 }
 
 .welcome-title {
@@ -82,10 +86,10 @@ body {
               20px -20px 60px #6851d4;
 }
 .welcome-title.light {
-  color: rgba(26, 24, 24, 0.728);
-  background: #e8e6f0;
+  color: #1a1818ba;
+  background: #f2ecec;
   box-shadow:  10px 10px 20px #7d7c82,
-             -10px -10px 20px #ffffff;
+             -10px -10px 20px #f2ecec;
 }
 
 .welcome-message.light {
@@ -107,8 +111,8 @@ body {
   background-repeat: no-repeat;
   width: 100%;
   min-height: 36vh;
-  box-shadow: inset 5px 5px 10px #5092c7,
-            inset -5px -5px 10px #6cc8ff;
+  /* box-shadow: inset 5px 5px 10px #5092c7,
+            inset -5px -5px 10px #6cc8ff; */
 }
 
 .carousel-img {
@@ -135,11 +139,25 @@ body {
 
 .slide-caption {
   font-size: 3rem;
-  color: white;
   position: relative !important;
   z-index: 0;
   right: 0;
   left: 0;
+}
+.slide-caption.dark {
+  color: white;
+  border-radius: 5px;
+  background: linear-gradient(45deg, #5a46b7, #4c3b9a);
+  box-shadow:  5px -5px 8px #3c2f7b,
+              -5px 5px 8px #6c53db;
+
+}
+.slide-caption.light {
+  color: black;
+  border-radius: 5px;
+  background: linear-gradient(145deg, #fffdfd, #dad4d4);
+  box-shadow:  5px 5px 8px #aeaaaa,
+              -5px -5px 8px #ffffff;
 }
 
 .about-me .about-details h3 {
