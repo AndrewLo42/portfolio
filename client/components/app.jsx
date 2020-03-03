@@ -28,7 +28,7 @@ class App extends React.Component {
     const about = <AboutMe mode={this.state.view}/>;
     const skills = <Skills />;
     const tools = <Tools />;
-    const apps = <Applications />;
+    const apps = <Applications mode={this.state.view} />;
     const contact = <ContactFooter />;
     const pages = [
       welcome,

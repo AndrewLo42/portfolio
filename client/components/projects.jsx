@@ -105,7 +105,7 @@ class Applications extends React.Component {
   render() {
     const showBasketState = this.state.openAppBasket ? 'app-basket' : 'app-basket hide';
     return (
-      <div className="apps-page content-div" id="applications">
+      <div className={`apps-page content-div ${this.props.mode}`} id="applications">
         <Container className="">
           <h2 className="text-center mb-2 apps-title">Applications Produced</h2>
           <Col className=" apps-container d-sm-flex d-none justify-content-around">
