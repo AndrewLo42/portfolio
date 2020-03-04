@@ -19,7 +19,8 @@ class ModeSlider extends React.Component {
       <div className="slider-container">
         <label onChange={() => this.handleToggle()} className="switch" htmlFor="checkbox">
           <input type="checkbox" id="checkbox"/>
-          <div className={`text-center slider round ${this.props.mode}`}></div>
+          <div className={` text-center slider round ${this.props.mode}`}>
+          </div>
         </label>
       </div>
     );

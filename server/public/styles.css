@@ -644,24 +644,29 @@ a:hover::after,
   content: "";
   position: absolute;
   transition: .4s;
-  width: 26px;
-  height: 26px;
+  width: 30px;
+  height: 30px;
 }
 
 .slider-container {
-  width: 52px;
-  background-color: black;
+  width: 60px;
 }
 
 .slider.light:before {
   background-color: black;
-  content: "L";
+  content: "☀️";
   color: white;
+  padding: 3px;
 }
 .slider.dark:before {
-  background-color: white;
-  content: "D";
+  padding: 3px;
+  background-color: cornflowerblue;
+  content: "🌙";
   color: black;
+}
+
+.slider-slide {
+  background-color: pink;
 }
 
 input:checked + .slider {
@@ -717,7 +722,6 @@ input:checked + .slider:before {
   }
 
 }
-
 
 @media (max-width: 575px) {
   .mobile-header-icons {

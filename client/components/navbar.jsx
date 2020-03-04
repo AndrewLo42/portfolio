@@ -7,8 +7,7 @@ import {
   Collapse,
   Nav,
   NavItem,
-  NavbarBrand,
-  Button
+  NavbarBrand
 } from 'reactstrap';
 import {
   Link,
