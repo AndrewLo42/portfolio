@@ -75,10 +75,10 @@ class Applications extends React.Component {
     return (
       <Container className="py-3">
         <div className={`m-auto justify-content-center ${classes} ${this.props.mode}`}>
-          <div className="app-title text-center">
+          <div className={`app-title text-center ${this.props.mode}`}>
             {this.state.currentApp.name}
           </div>
-          <div className=" px-3 app-info text-center">{this.state.currentApp.description}</div>
+          <div className={` px-3 app-info text-center ${this.props.mode}`}>{this.state.currentApp.description}</div>
           <Row className="py-2 text-center justify-content-center">
             <Button
               href={this.state.currentApp.live}
@@ -94,7 +94,6 @@ class Applications extends React.Component {
               aria-label="Github">Source</Button>
           </Row>
           <Row>
-
             <img className="p-2 app-example m-auto img-fluid" src={this.state.currentApp.example}></img>
           </Row>
         </div>

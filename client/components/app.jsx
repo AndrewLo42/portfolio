@@ -10,6 +10,7 @@ import FadeInPage from './fade-in-pages';
 import ScrollIndicator from './scroll-indicator';
 import Aside from './aside';
 import Context from './context';
+import ModeSlider from './mode-slider';
 // import useColorModes from './useMode';
 // const { theme, toggleTheme } = useColorModes();
 
@@ -18,7 +19,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      view: 'dark'
+      view: 'light'
     };
     this.toggleColor = this.toggleColor.bind(this);
   }
@@ -57,6 +58,7 @@ class App extends React.Component {
           view
         }} />
         <NavBar mode={this.state.view} toggleColor={this.toggleColor}/>
+        <ModeSlider mode={this.state.view} toggleColor={this.toggleColor}/>
         <Aside />
         <ScrollIndicator />
         {this.renderPages()}

@@ -27,7 +27,8 @@ body {
 }
 .about-page.light {
   border-top: 3.3px solid #5441ab;
-  background-color: #a09d9d;
+  background-color: #81f5ff;
+  color: black;
 }
 .about-page.dark {
   border-top: 3.3px solid lavender;
@@ -289,7 +290,7 @@ a:hover::after,
 }
 .app-card.light {
   color: black;
-  background: linear-gradient(315deg, #065d9f, #d0dfdf);
+  background: linear-gradient(315deg, #C7F5FF, #d0dfdf);
 
 }
 
@@ -323,9 +324,16 @@ a:hover::after,
   text-decoration: underline;
   text-decoration-color: #9984F1;
 }
+.app-title.light {
+  color: #352e2b;
+  text-decoration-color: #AEB463;
+}
 .app-info {
   font-size: 1.5rem;
   color: #99e4a4;
+}
+.app-info.light{
+  color: black;
 }
 .app-basket {
   transition: opacity 0.3s;
@@ -338,7 +346,7 @@ a:hover::after,
   background: #2f5059;
 }
 .app-basket.light{
-  background: #25aace;
+  background: #7adae4;
 }
 .app-basket.hide {
   opacity: 0;
@@ -396,7 +404,7 @@ a:hover::after,
   color: lavender;
 }
 .about-paragraphs.light {
-  color: #040404c9;
+  color: #040404e9;
 }
 .about-paragraphs {
   font-size: 1.3rem;
@@ -420,7 +428,7 @@ a:hover::after,
 }
 
 .about-icon.light {
-  color: #a4f2b0;
+  color: #2D3A3E;
 }
 .about-icon.dark {
   color: #07b1b1;
@@ -432,7 +440,7 @@ a:hover::after,
 }
 .about-icon.light:hover {
   transform: scale(1.1);
-  color: #43dc73cb;
+  color: #DCBAA9;
 }
 
 .skills-card,
@@ -619,6 +627,67 @@ a:hover::after,
   background-color: gray;
 }
 
+.slider-container {
+  position: absolute;
+}
+.slider {
+  background-color: black;
+  content: "";
+  cursor: pointer;
+  position: fixed;
+  transition: .4s;
+  left: 8px;
+}
+
+.slider:before {
+  background-color: #fff;
+  content: "";
+  position: absolute;
+  transition: .4s;
+  width: 26px;
+  height: 26px;
+}
+
+.slider-container {
+  width: 52px;
+  background-color: black;
+}
+
+.slider.light:before {
+  background-color: black;
+  content: "L";
+  color: white;
+}
+.slider.dark:before {
+  background-color: white;
+  content: "D";
+  color: black;
+}
+
+input:checked + .slider {
+  background-color: green;
+}
+
+input:checked + .slider:before {
+  animation: fade .4s;
+}
+.switch{
+  display: inline-block;
+  position: relative;
+  z-index: 100;
+}
+#checkbox {
+  display: none;
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
 @media (max-height: 414px){
   .welcome-container{
     display: none;
@@ -699,6 +768,12 @@ a:hover::after,
 @keyframes fade-out {
   0% { opacity: 1; }
   100% { opacity: 0; }
+}
+
+@keyframes fade {
+  0% { opacity: 1; }
+  50% {opacity: 0;}
+  100% { opacity: 1; }
 }
 
 @keyframes slide-in {
