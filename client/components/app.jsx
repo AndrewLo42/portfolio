@@ -27,10 +27,10 @@ class App extends React.Component {
   renderPages() {
     const welcome = <Welcome mode={this.state.view}/>;
     const about = <AboutMe mode={this.state.view}/>;
-    const skills = <Skills />;
-    const tools = <Tools />;
+    const skills = <Skills mode={this.state.view}/>;
+    const tools = <Tools mode={this.state.view}/>;
     const apps = <Applications mode={this.state.view} />;
-    const contact = <ContactFooter />;
+    const contact = <ContactFooter mode={this.state.view}/>;
     const pages = [
       welcome,
       about,

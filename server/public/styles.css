@@ -40,10 +40,19 @@ body {
   padding-top: 5vh;
   color: lavender;
 }
+.skills-page.light {
+  background-color: #a0ffe6;
+  color: black;
+  border-top: 3.3px solid #89c6c3db;
+}
 .tools-page {
   border-top: 3.3px solid lavender;
   background-color: #437380;
   padding-top: 5vh;
+}
+.tools-page.light {
+  border-top: 3.3px solid #0e0e93;
+  background-color: #ccccf7;
 }
 .apps-page.light {
   border-top: 3.3px solid #437380;
@@ -456,6 +465,10 @@ a:hover::after,
   color: lavender;
   font-weight: 900;
 }
+.tools-header.light,
+.skills-header.light {
+  color: black !important;
+}
 
 .skills-card {
   /* background-color: #3c159878; */
@@ -656,11 +669,11 @@ a:hover::after,
   background-color: black;
   content: "☀️";
   color: white;
-  padding-left: 5.5px;
+  padding-left: 4px;
   padding-top: 3px;
 }
 .slider.dark:before {
-  padding: 4.2px;
+  padding: 4px;
   background-color: cornflowerblue;
   content: "🌙";
   color: black;

@@ -7,15 +7,14 @@ import {
   CardBody
 } from 'reactstrap';
 
-function Tools() {
+function Tools(props) {
   return (
-
-    <div className="tools-page content-div" id="tools">
+    <div className={`tools-page content-div ${props.mode}`} id="tools">
       <Container>
         <Row className="mobile-skills-row">
           <Col xs="12">
             <div className="heading-div position-relative m-auto">
-              <h3 className="tools-header text-center heading mb-4 text-white spread slide-in">Tools</h3>
+              <h3 className={`tools-header text-center heading mb-4 text-white spread slide-in ${props.mode}`}>Tools</h3>
             </div>
           </Col>
           <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-skills-card">

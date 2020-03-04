@@ -8,18 +8,18 @@ import {
   CardBody
 } from 'reactstrap';
 
-function Skills() {
+function Skills(props) {
   return (
-    <div className="skills-page content-div position-relative" id="skills">
+    <div className={`skills-page content-div position-relative ${props.mode}`} id="skills">
       <Container>
         <Row className="justify-content-md-center mobile-skills-row">
           <Col xs="12">
             <div className="heading-div position-relative m-auto">
-              <h3 className="skills-header text-center heading mb-4 spread slide-in">Technical Skills</h3>
+              <h3 className={`skills-header text-center heading mb-4 spread slide-in ${props.mode}`}>Technical Skills</h3>
             </div>
           </Col>
           <Col lg="3" md="5" sm="6" className="p-sm-3 mobile-skills-card">
-            <Card className="h-100 skills-card slide-in">
+            <Card className={`h-100 skills-card slide-in ${props.mode}`}>
               <CardBody>
                 <i className="devicon-javascript-plain"></i>
                 <div className="my-3">
