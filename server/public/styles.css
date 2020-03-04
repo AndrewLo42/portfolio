@@ -644,22 +644,23 @@ a:hover::after,
   content: "";
   position: absolute;
   transition: .4s;
-  width: 30px;
-  height: 30px;
+  width: 28px;
+  height: 28px;
 }
 
 .slider-container {
-  width: 60px;
+  width: 36px;
 }
 
 .slider.light:before {
   background-color: black;
   content: "☀️";
   color: white;
-  padding: 3px;
+  padding-left: 5.5px;
+  padding-top: 3px;
 }
 .slider.dark:before {
-  padding: 3px;
+  padding: 4.2px;
   background-color: cornflowerblue;
   content: "🌙";
   color: black;
