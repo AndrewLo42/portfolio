@@ -7,8 +7,7 @@ import {
   Collapse,
   Nav,
   NavItem,
-  NavbarBrand,
-  Button
+  NavbarBrand
 } from 'reactstrap';
 import {
   Link,
@@ -157,12 +156,12 @@ class NavBar extends React.Component {
               </Nav>
             </Collapse>
           </Navbar>
-          <div className="color-container text-center">
+          {/* <div className="color-container text-center">
             <div className="text-center">
               <Button name="dark" type="checkbox" className="dark-color-button text-center mr-1" onClick={() => this.handleColorToggle()}> D </Button>
               <Button name="light" type="checkbox" className="light-color-button text-center" onClick={() => this.handleColorToggle()}> L </Button>
             </div>
-          </div>
+          </div> */}
         </Container>
       </>
     );

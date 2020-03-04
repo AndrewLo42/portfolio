@@ -19,7 +19,7 @@ class AppCard extends React.Component {
   render() {
     return (
       <>
-        <Card className=" app-card mr-3 fade-in" onClick={this.sendBasket}>
+        <Card className={`app-card mr-3 fade-in ${this.props.mode}`} onClick={this.sendBasket}>
           <CardImg top className="mt-2 project-icon img-fluid" src={this.props.appInfo.icon} />
           <CardBody>
             <CardTitle className="text-center">

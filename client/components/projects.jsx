@@ -73,12 +73,12 @@ class Applications extends React.Component {
 
   showAppInfo(classes) {
     return (
-      <Container className="pt-3">
-        <div className={`m-auto justify-content-center ${classes}`}>
-          <div className="app-title text-center">
+      <Container className="py-3">
+        <div className={`m-auto justify-content-center ${classes} ${this.props.mode}`}>
+          <div className={`app-title text-center ${this.props.mode}`}>
             {this.state.currentApp.name}
           </div>
-          <div className="app-info text-center">{this.state.currentApp.description}</div>
+          <div className={` px-3 app-info text-center ${this.props.mode}`}>{this.state.currentApp.description}</div>
           <Row className="py-2 text-center justify-content-center">
             <Button
               href={this.state.currentApp.live}
@@ -94,7 +94,6 @@ class Applications extends React.Component {
               aria-label="Github">Source</Button>
           </Row>
           <Row>
-
             <img className="p-2 app-example m-auto img-fluid" src={this.state.currentApp.example}></img>
           </Row>
         </div>
@@ -107,13 +106,13 @@ class Applications extends React.Component {
     return (
       <div className={`apps-page content-div ${this.props.mode}`} id="applications">
         <Container className="">
-          <h2 className="text-center mb-2 apps-title">Applications Produced</h2>
-          <Col className=" apps-container d-sm-flex d-none justify-content-around">
-            <AppCard appInfo={this.state.apps[0]} toggleBasket={this.toggleAppBasket} />
-            <AppCard appInfo={this.state.apps[1]} toggleBasket={this.toggleAppBasket}/>
-            <AppCard appInfo={this.state.apps[2]} toggleBasket={this.toggleAppBasket}/>
+          <h2 className={`text-center mb-2 apps-title ${this.props.mode}`}>Applications Produced</h2>
+          <Col className={`apps-container d-sm-flex d-none justify-content-around ${this.props.mode}`}>
+            <AppCard appInfo={this.state.apps[0]} toggleBasket={this.toggleAppBasket} mode={this.props.mode}/>
+            <AppCard appInfo={this.state.apps[1]} toggleBasket={this.toggleAppBasket} mode={this.props.mode}/>
+            <AppCard appInfo={this.state.apps[2]} toggleBasket={this.toggleAppBasket} mode={this.props.mode}/>
           </Col>
-          <Col className="apps-container d-sm-none d-block">
+          <Col className={`apps-container d-sm-none d-block ${this.props.mode}`}>
             <BigApp appInfo={this.state.apps[0]}/>
             <BigApp appInfo={this.state.apps[1]} />
             <BigApp appInfo={this.state.apps[2]} />
