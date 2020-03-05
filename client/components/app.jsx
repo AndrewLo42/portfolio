@@ -59,8 +59,8 @@ class App extends React.Component {
         }} />
         <NavBar mode={this.state.view} toggleColor={this.toggleColor}/>
         <ModeSlider mode={this.state.view} toggleColor={this.toggleColor}/>
-        <Aside />
-        <ScrollIndicator />
+        <Aside mode={this.state.view}/>
+        <ScrollIndicator mode={this.state.view}/>
         {this.renderPages()}
       </>
     );
