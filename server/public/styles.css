@@ -591,6 +591,9 @@ a:hover::after,
   color: lavender;
   text-align: center;
 }
+.scroll.light {
+  color: #2D3A3E;
+}
 .scroll:before {
   height: 60px;
   width: 2px;
@@ -636,7 +639,7 @@ a:hover::after,
   text-shadow: 5px 5px 10px black;
 }
 .aside-icon.light {
-  color: #020531;
+  color: #2D3A3E;
 }
 
 .aside-icon:hover {
