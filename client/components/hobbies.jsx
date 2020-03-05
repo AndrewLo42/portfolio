@@ -5,7 +5,7 @@ import {
   Col
 } from 'reactstrap';
 
-function BottomBar() {
+function BottomBar(props) {
   return (
     <div className="bottom-page">
       <Container className="bottom-container" id="contact">

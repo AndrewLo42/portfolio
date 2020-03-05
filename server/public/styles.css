@@ -40,10 +40,19 @@ body {
   padding-top: 5vh;
   color: lavender;
 }
+.skills-page.light {
+  background-color: #a0ffe6;
+  color: black;
+  border-top: 3.3px solid #89c6c3db;
+}
 .tools-page {
   border-top: 3.3px solid lavender;
   background-color: #437380;
   padding-top: 5vh;
+}
+.tools-page.light {
+  border-top: 3.3px solid #0e0e93;
+  background-color: #ccccf7;
 }
 .apps-page.light {
   border-top: 3.3px solid #437380;
@@ -60,10 +69,17 @@ body {
   border-top: 3px solid lavender;
   user-select: text;
 }
+.contact-page.light {
+  background: linear-gradient(-5deg, #ffffdd 0%,lavender );
+  border-top: 3px solid #61616a;
+}
 .bottom-page {
-  border-top: 1px solid lavender;
+  border-top: 2px solid lavender;
   background-color: #020531;
   min-height: 8vh;
+}
+.bottom-page.light {
+  border-top: 2px solid cyan;
 }
 .footer-container {
   min-height: 55vh;
@@ -456,6 +472,10 @@ a:hover::after,
   color: lavender;
   font-weight: 900;
 }
+.tools-header.light,
+.skills-header.light {
+  color: black !important;
+}
 
 .skills-card {
   /* background-color: #3c159878; */
@@ -499,6 +519,9 @@ a:hover::after,
   font-weight: 750;
   color: #44ddfc;
 }
+.footer-title.light {
+  color: black;
+}
 .contact-row {
   color: #99e4a4;
   font-size: 1.4em;
@@ -506,18 +529,29 @@ a:hover::after,
 }
 .contact-row a {
   color: #fafafe !important;
+  transition: .2s;
+}
+.contact-row.light a {
+  color: #493260 !important;
+}
+.contact-row.light a:hover {
+  color: #a1e6e3 !important;
 }
 .contact-row a:hover {
   color: #99e4a4!important;
 }
 .menu-links {
   color: lavender;
-    margin-top: 4rem;
+  margin-top: 4rem;
 }
+
 .footer-icon {
   transition: .25s;
   font-size: 3.5rem;
   color: #25bbd8;
+}
+.footer-icon.light {
+  color: black;
 }
 .footer-icon:hover {
   transform: scale(1.1);
@@ -579,6 +613,10 @@ a:hover::after,
   background: cyan;
   /* animation: scroll-animation 1.5s infinite; */
 }
+.scroll.light:before,
+.scroll.light:after {
+  background: black;
+}
 
 .aside {
   content: "";
@@ -589,13 +627,16 @@ a:hover::after,
   height: 110px;
   width: 8px;
   z-index: 999;
+
 }
 
 .aside-icon {
   font-size: 1.8rem;
   border-radius: 50%;
   text-shadow: 5px 5px 10px black;
-
+}
+.aside-icon.light {
+  color: #020531;
 }
 
 .aside-icon:hover {
@@ -656,11 +697,11 @@ a:hover::after,
   background-color: black;
   content: "☀️";
   color: white;
-  padding-left: 5.5px;
+  padding-left: 4px;
   padding-top: 3px;
 }
 .slider.dark:before {
-  padding: 4.2px;
+  padding: 4px;
   background-color: cornflowerblue;
   content: "🌙";
   color: black;

@@ -2,7 +2,7 @@ import React from 'react';
 
 function ScrollIndicator(props) {
   return (
-    <div className="scroll">
+    <div className={`scroll ${props.mode}`}>
       <p>
         Scroll
       </p>

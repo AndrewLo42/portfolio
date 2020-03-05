@@ -9,7 +9,7 @@ function Aside(props) {
         className="decoration-none default-nav contact-linkedin pointer mr-2"
         aria-label="LinkedIn">
         <div className="d-flex">
-          <i className="fab fa-linkedin aside-icon m-auto" />
+          <i className={`fab fa-linkedin aside-icon m-auto ${props.mode}`} />
         </div>
       </a>
       <a href="https://github.com/andrewlo42"
@@ -18,7 +18,7 @@ function Aside(props) {
         className="mt-2 decoration-none default-nav contact-github pointer mr-2"
         aria-label="Github">
         <div className="border-div-small d-flex">
-          <i className="fab fa-github aside-icon m-auto" />
+          <i className={`fab fa-github aside-icon m-auto ${props.mode}`} />
         </div>
       </a>
       <a href="./assets/Andrew_Lo.pdf"
@@ -28,7 +28,7 @@ function Aside(props) {
         aria-label="Resume Download"
       >
         <div className="border-div-small d-flex">
-          <i className="far fa-file-alt aside-icon m-auto" />
+          <i className={`far fa-file-alt aside-icon m-auto ${props.mode}`} />
         </div>
       </a>
     </div>

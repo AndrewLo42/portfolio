@@ -6,14 +6,14 @@ import {
 } from 'reactstrap';
 import BottomBar from './hobbies';
 
-function ContactFooter() {
+function ContactFooter(props) {
   return (
-    <div className="contact-page">
+    <div className={`contact-page ${props.mode}`}>
       <Container className="footer-container" id="contact">
-        <Col className="mb-2 footer-title text-center">
+        <Col className={`mb-2 footer-title text-center ${props.mode}`}>
           Contact Me
         </Col>
-        <Row className="mt-5 justify-content-center contact-row">
+        <Row className={`mt-5 justify-content-center contact-row ${props.mode}`}>
           <p className="text-center mb-md-0 mx-3">
             <a href="https://www.google.com/maps/place/Orange+County,+CA/@33.6410077,-118.0496294,10z/data=!3m1!4b1!4m5!3m4!1s0x80dc925c54d5f7cf:0xdea6c3618ff0d607!8m2!3d33.7174708!4d-117.8311428"
               className="pointer"
@@ -39,14 +39,14 @@ function ContactFooter() {
           <div className="container">
             <Row className="justify-content-center row">
               <div className="">
-                <div className=" menu-links">
+                <div className={`menu-links ${props.mode}`}>
                   <a href="https://www.linkedin.com/in/AndrewCLo/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="mr-5 decoration-none default-nav contact-linkedin pointer mr-2"
                     aria-label="LinkedIn">
                     <div className="d-flex">
-                      <i className="fab fa-linkedin footer-icon m-auto" />
+                      <i className={`fab fa-linkedin footer-icon m-auto ${props.mode}`} />
                     </div>
                   </a>
                   <a href="https://github.com/andrewlo42"
@@ -55,7 +55,7 @@ function ContactFooter() {
                     className="mr-5 decoration-none default-nav contact-github pointer mr-2"
                     aria-label="Github">
                     <div className="border-div-small d-flex">
-                      <i className="fab fa-github footer-icon m-auto" />
+                      <i className={`fab fa-github footer-icon m-auto ${props.mode}`} />
                     </div>
                   </a>
                   <a href="./assets/Andrew_Lo.pdf"
@@ -64,7 +64,7 @@ function ContactFooter() {
                     className="decoration-none pointer mr-2"
                     aria-label="Resume Download">
                     <div className="border-div-small d-flex">
-                      <i className="far fa-file-alt footer-icon m-auto" />
+                      <i className={`far fa-file-alt footer-icon m-auto ${props.mode}`} />
                     </div>
                   </a>
                 </div>
@@ -84,7 +84,7 @@ function ContactFooter() {
         </div>
         <div className="hover-me"></div>
       </Col>
-      <BottomBar />
+      <BottomBar/>
     </div>
   );
 
