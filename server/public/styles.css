@@ -700,7 +700,7 @@ a:hover::after,
   background-color: black;
   content: "☀️";
   color: white;
-  padding-left: 4px;
+  padding-left: 3.3px;
   padding-top: 3px;
 }
 .slider.dark:before {

@@ -29,9 +29,9 @@ function ContactFooter(props) {
             </a>
           </p>
           <p className="text-center mb-md-0 mx-3">
-            <a href="tel:+19492027141"
+            <a href="tel:+19492325930"
               className="pointer">
-              <i className="fas fa-phone mr-2" />(949)-232-5930
+              <i className="fas fa-phone mr-2" />(949) 232-5930
             </a>
           </p>
         </Row>
