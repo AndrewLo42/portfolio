@@ -35,7 +35,7 @@ function ContactFooter(props) {
             </a>
           </p>
         </Row>
-        <div className="pt-2 footer_top">
+        <div className="pt-1 footer_top">
           <div className="container">
             <Row className="justify-content-center row">
               <div className="">
@@ -71,13 +71,14 @@ function ContactFooter(props) {
               </div>
             </Row>
           </div>
-          <Container className="pt-3 contact-btn-container">
+          <Container className="mt-5 contact-btn-container">
             <Row className="justify-content-center">
               <a
+                className="contact-link"
                 href="https://contact.andrewclo.com"
                 target="_blank"
                 rel="noopener noreferrer">
-                <button className="btn border">Messsage Me</button>
+                <button className={`contact-btn btn border ${props.mode}`}>Messsage Me</button>
               </a>
 
             </Row>
