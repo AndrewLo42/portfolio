@@ -71,6 +71,14 @@ function ContactFooter(props) {
               </div>
             </Row>
           </div>
+          <Container className="contact-btn-container">
+            <a
+              href="https://contact.andrewclo.com"
+              target="_blank"
+              rel="noopener noreferrer">
+              <button className="btn ">Messsage Me</button>
+            </a>
+          </Container>
         </div>
       </Container>
       <Col className=" mt-1 justify-content-center ">
