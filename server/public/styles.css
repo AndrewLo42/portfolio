@@ -700,7 +700,7 @@ a:hover::after,
   background-color: black;
   content: "☀️";
   color: white;
-  padding-left: 3.3px;
+  padding-left: .33rem;
   padding-top: 3px;
 }
 .slider.dark:before {
@@ -736,6 +736,26 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+.contact-btn {
+
+  transition: .35s;
+  font-size: 1.8rem;
+}
+.contact-btn.light {
+  background-color: #493260;
+  color: lavender;
+}
+.contact-btn.dark {
+  background-color: #25bad8dd;
+}
+.contact-btn:hover {
+  background-color: #00ffffd6 !important;
+  color: black;
+}
+.contact-link:after {
+  display: none;
 }
 
 @media (max-height: 414px){
