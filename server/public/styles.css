@@ -739,7 +739,6 @@ input:checked + .slider:before {
 }
 
 .contact-btn {
-
   transition: .35s;
   font-size: 1.8rem;
 }
@@ -784,6 +783,9 @@ input:checked + .slider:before {
   }
   .app-card {
     font-size: 1.5rem;
+  }
+  .slider.light:before {
+    padding-left: .15rem;
   }
 
 }
