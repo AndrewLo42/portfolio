@@ -98,7 +98,7 @@ body {
 }
 .welcome-title {
   text-align: center;
-  padding-top: 1.3rem;
+  padding-top: 1.5rem;
   color: lavender;
   border-radius: 5px;
   background: #5441ab;
@@ -113,8 +113,8 @@ body {
 .welcome-title.light {
   color: #1a1818ba;
   background: #f2ecec;
-  box-shadow:  10px 10px 20px #7d7c82,
-             -10px -10px 20px #f2ecec;
+  box-shadow:  5px 5px 10px #7d7c82,
+             -5px -5px 10px #f2ecec;
 }
 
 .welcome-message.light {
@@ -136,7 +136,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  min-height: 36vh;
+  min-height: 44vh;
   /* box-shadow: inset 5px 5px 10px #5092c7,
             inset -5px -5px 10px #6cc8ff; */
 }
