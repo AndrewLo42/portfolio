@@ -4,7 +4,7 @@ import {
   Row,
   Col
 } from 'reactstrap';
-import CarouselComponent from './carousel';
+// import CarouselComponent from './carousel';
 
 class Welcome extends React.Component {
   constructor(props) {
@@ -39,10 +39,13 @@ class Welcome extends React.Component {
         </div>
         <Container className=''>
           <Col>
-            <h1 className={`ml-4 mt-2 p-1 welcome-title ${this.props.mode}`}>My name is Andrew Lo, and I&#39;m a ...</h1>
+            <div className={`ml-4 mt-2 p-1 welcome-title ${this.props.mode}`}>
+              <h1>My name is Andrew Lo</h1>
+              <div className={'welcome-footer'}>I&#39;m a programmer with a mission to learn everything and create elegant solutions in a digital world.</div>
+            </div>
           </Col>
           <Row className="row justify-content-center">
-            <CarouselComponent slides={this.state.carouselSlides} mode={this.props.mode}/>
+            {/* <CarouselComponent slides={this.state.carouselSlides} mode={this.props.mode}/> */}
           </Row>
         </Container>
 

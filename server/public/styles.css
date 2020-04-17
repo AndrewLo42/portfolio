@@ -93,6 +93,9 @@ body {
   background-color: #f2ececeb;
 }
 
+.welcome-footer {
+  font-size: 1.4rem;
+}
 .welcome-title {
   text-align: center;
   padding-top: 1.3rem;
