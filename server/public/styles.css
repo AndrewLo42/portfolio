@@ -27,7 +27,7 @@ body {
 }
 .about-page.light {
   border-top: 3.3px solid #5441ab;
-  background-color: #81f5ff;
+  background-color: #a4eff5;
   color: black;
 }
 .about-page.dark {
@@ -704,11 +704,11 @@ a:hover::after,
   background-color: black;
   content: "☀️";
   color: white;
-  padding-left: .33rem;
+  padding-left: .31rem;
   padding-top: 3px;
 }
 .slider.dark:before {
-  padding: 4px;
+  padding: 3.3px;
   background-color: cornflowerblue;
   content: "🌙";
   color: black;
