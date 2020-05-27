@@ -102,19 +102,14 @@ body {
   color: lavender;
   border-radius: 5px;
   background: #5441ab;
-  box-shadow:  -20px 20px 60px #403182,
-              20px -20px 60px #6851d4;
 }
 .welcome-title.dark {
   background: #5441ab;
-  box-shadow:  -20px 20px 60px #403182,
-              20px -20px 60px #6851d4;
 }
 .welcome-title.light {
   color: #1a1818ba;
   background: #f2ecec;
-  box-shadow:  5px 5px 10px #7d7c82,
-             -5px -5px 10px #f2ecec;
+
 }
 
 .welcome-message.light {
@@ -685,6 +680,7 @@ a:hover::after,
   position: fixed;
   transition: .4s;
   left: 8px;
+  text-align: center;
 }
 
 .slider:before {
@@ -704,14 +700,14 @@ a:hover::after,
   background-color: black;
   content: "☀️";
   color: white;
-  padding-left: .31rem;
-  padding-top: 3px;
+  padding-top: 2.5px;
 }
 .slider.dark:before {
-  padding: 3.3px;
   background-color: cornflowerblue;
   content: "🌙";
   color: black;
+
+  padding-top: 3.3px;
 }
 
 .slider-slide {
