@@ -124,7 +124,7 @@ body {
 .welcome-container {
   background-image: url('./images/dice.jpg');
   border-top: 2px solid #56e4e4;
-  /* border-bottom: 2px solid #bfe8e8; */
+  border-bottom: 4px ridge #56e4e4;
   background-attachment: fixed;
   background-position: center;
   object-fit: contain;
