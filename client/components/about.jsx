@@ -4,12 +4,17 @@ import {
   Row,
   Col
 } from 'reactstrap';
+// import Divider from './pageDivider';
 
 function AboutMe(props) {
   return (
     <div className={`about-page about-description content-div ${props.mode}`} id="about">
       <Container className="">
-        <Row className="justify-content-center">
+
+        <div className="text-center justify-content-center d-flex mb-5">
+          <img src="./images/treeconblue.png"></img>
+        </div>
+        <Row className="mt-1 justify-content-center">
           <Col className="" lg="6" md="10" sm="11">
             <h3 className="mb-4 d-block d-sm-none text-md-left text-center fade-in slide-in-10 about-me-title">About Me</h3>
             <img className="my-img my-2 img-fluid fade-in slide-in d-flex" src="./images/stairprof.jpg" alt="profile" />
@@ -68,7 +73,9 @@ function AboutMe(props) {
             </div>
           </Col>
         </Row>
+
       </Container>
+      {/* <Divider/> */}
     </div>
   );
 }

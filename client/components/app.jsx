@@ -11,6 +11,7 @@ import ScrollIndicator from './scroll-indicator';
 import Aside from './aside';
 import Context from './context';
 import ModeSlider from './mode-slider';
+import HomePageProjects from './homeProjects';
 // import useColorModes from './useMode';
 // const { theme, toggleTheme } = useColorModes();
 
@@ -30,10 +31,15 @@ class App extends React.Component {
     const skills = <Skills mode={this.state.view}/>;
     const tools = <Tools mode={this.state.view}/>;
     const apps = <Applications mode={this.state.view} />;
+
+    const projects = <HomePageProjects mode={this.state.view} />;
+
     const contact = <ContactFooter mode={this.state.view}/>;
+
     const pages = [
       welcome,
       about,
+      projects,
       apps,
       skills,
       tools,

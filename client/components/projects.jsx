@@ -7,6 +7,7 @@ import {
   Col,
   Button
 } from 'reactstrap';
+import Divider from './pageDivider';
 
 class Applications extends React.Component {
   constructor(props) {
@@ -105,7 +106,9 @@ class Applications extends React.Component {
     const showBasketState = this.state.openAppBasket ? 'app-basket' : 'app-basket hide';
     return (
       <div className={`apps-page content-div ${this.props.mode}`} id="applications">
-        <Container className="">
+        <Divider />
+
+        <Container className="mt-5">
           <h2 className={`text-center mb-2 apps-title ${this.props.mode}`}>Applications Produced</h2>
           <Col className={`apps-container d-sm-flex d-none justify-content-around ${this.props.mode}`}>
             <AppCard appInfo={this.state.apps[0]} toggleBasket={this.toggleAppBasket} mode={this.props.mode}/>
