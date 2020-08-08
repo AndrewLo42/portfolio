@@ -1,4 +1,5 @@
 import React from 'react';
+import Divider from './pageDivider';
 
 import {
   Container,
@@ -11,7 +12,8 @@ import {
 function Skills(props) {
   return (
     <div className={`skills-page content-div position-relative ${props.mode}`} id="skills">
-      <Container>
+      <Divider/>
+      <Container className="mt-5">
         <Row className="justify-content-md-center mobile-skills-row">
           <Col xs="12">
             <div className="heading-div position-relative m-auto">

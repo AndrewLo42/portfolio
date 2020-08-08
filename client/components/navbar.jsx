@@ -22,6 +22,23 @@ class NavBar extends React.Component {
     });
     this.handleToggle = this.handleToggle.bind(this);
     this.handleColorToggle = this.handleColorToggle.bind(this);
+    if (typeof window !== 'undefined') {
+      let prevScrollpos = window.pageYOffset;
+      window.onscroll = function () {
+        const maxScroll = document.body.clientHeight - window.innerHeight;
+        const currentScrollPos = window.pageYOffset;
+        if (
+          (maxScroll > 0 && prevScrollpos > currentScrollPos && prevScrollpos <= maxScroll) ||
+          (maxScroll <= 0 && prevScrollpos > currentScrollPos) ||
+          (prevScrollpos <= 0 && currentScrollPos <= 0)
+        ) {
+          document.getElementById('navbar').style.top = '0';
+        } else {
+          document.getElementById('navbar').style.top = '-8rem'; // adjustable based your need
+        }
+        prevScrollpos = currentScrollPos;
+      };
+    }
   }
 
   handleToggle() {
@@ -42,7 +59,7 @@ class NavBar extends React.Component {
     }
     return (
       <>
-        <Container fluid={true} className="py-3 shadow-lg header-item sticky-top">
+        <Container id="navbar" fluid={true} className="py-2 shadow-lg header-item sticky-top">
           <Navbar expand="md">
             <NavbarBrand onClick={() => {
               scroll.scrollToTop();
@@ -54,7 +71,7 @@ class NavBar extends React.Component {
               <Row className="pl-2">
                 <img src="./images/die20.png"
                   className="img-fluid header-logo"/>
-                <div className="text-center m-auto">ALo</div>
+                {/* <div className="text-center m-auto">ALo</div> */}
               </Row>
             </NavbarBrand>
             <div className="mobile-header-icons">

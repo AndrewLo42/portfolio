@@ -60,9 +60,9 @@ function AboutMe(props) {
           </Col>
           <Col className="description-container" lg="6" md="12" sm="12">
             <div className="d-flex h-100">
-              <div className="m-auto">
+              <div className="m-2">
                 <div className="position-relative d-none d-sm-block slide-in">
-                  <h3 className="about-me-title heading mb-4 spread fade-in">About Me</h3>
+                  <h3 className=" about-me-title heading mb-4 spread fade-in">About Me</h3>
                 </div>
                 <div className={`about-paragraphs slide-in-10 ${props.mode}`}>
                   <p>Hi! I&#39;m  Andrew Lo, and I&#39;m a Software Engineer with a passion for coding and an unyielding pursuit for knowledge.</p>

@@ -86,7 +86,10 @@ function ContactFooter(props) {
         </div>
       </Container>
       <Col className=" mt-1 justify-content-center ">
-        <div className="mb-2 boxed-btn3 text-center" href="#">
+        <div className="pb-5 row justify-content-center">
+          <img src="./images/die20.png" className="img-fluid header-logo"/>
+        </div>
+        {/* <div className="mb-2 boxed-btn3 text-center" href="#">
           <div className="smash-quote">
             <div>... and sometimes you just go out like a buster.</div>
             <div> ~ Mang0</div>
@@ -94,7 +97,7 @@ function ContactFooter(props) {
             </img>
           </div>
         </div>
-        <div className="hover-me"></div>
+        <div className="hover-me"></div> */}
       </Col>
       <BottomBar/>
     </div>

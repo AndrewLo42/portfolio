@@ -6,11 +6,15 @@ import {
   Card,
   CardBody
 } from 'reactstrap';
+import SemiCircle from './semicircleDivider';
 
 function Tools(props) {
   return (
     <div className={`tools-page content-div ${props.mode}`} id="tools">
-      <Container>
+      <div className="justify-content-center d-flex mb-4">
+        <div className="line"></div>
+      </div>
+      <Container className="tools-cards-list">
         <Row className="mobile-skills-row">
           <Col xs="12">
             <div className="heading-div position-relative m-auto">
@@ -139,6 +143,7 @@ function Tools(props) {
           </Col>
         </Row>
       </Container>
+      <SemiCircle/>
     </div>
   );
 }
