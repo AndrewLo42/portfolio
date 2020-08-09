@@ -85,7 +85,7 @@ function ContactFooter(props) {
           </Container>
         </div>
       </Container>
-      <Col className=" mt-1 justify-content-center ">
+      <Col className=" mt-2 justify-content-center ">
         <div className="pb-5 row justify-content-center">
           <img src="./images/die20.png" className="img-fluid header-logo"/>
         </div>
