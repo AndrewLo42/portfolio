@@ -23,7 +23,7 @@ class HomePageProjects extends React.Component {
       );
     }
     return (
-      <section className = "home-projects-sub text-center" >
+      <section className = "home-projects-sub text-center" id="applications">
         <div className="justify-content-center d-flex mb-4">
           <div className="line"></div>
         </div>

@@ -131,7 +131,7 @@ class NavBar extends React.Component {
                     duration={1000}
                     className="pointer-spin px-0 nav-link"
                     onClick={this.handleToggle}>
-                    Applications
+                    Projects
                   </Link>
                 </NavItem>
                 <NavItem className="ml-md-5">

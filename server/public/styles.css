@@ -173,7 +173,8 @@ body {
   background-position: center;
 	color: white;
 	/* width: 400px; */
-	height: 28em;
+  /* height: 28em; */
+  height: 45vh;
   padding: 2rem;
   margin-top: 3rem;
   border: 3px ridge cyan;
@@ -210,7 +211,7 @@ body {
 .home-img-msg {
   /* margin: 1rem 1rem -.5rem 0; */
   margin: 0 1rem -1rem 0;
-  font-size: 3.3rem;
+  font-size: 3rem;
   max-width: 100%;
 
 }
@@ -376,7 +377,7 @@ body {
   cursor: pointer;
 }
 .pointer-spin:hover {
-  color: pink;
+  color: var(--red-accent);
   cursor: pointer;
 }
 
@@ -500,10 +501,11 @@ a:hover::after,
 .app-btn {
   font-size: 1.5rem;
   border: .5px solid rgb(157, 157, 167);
+  background-color: gray;
 }
 
 .app-btn:hover {
-  color: pink !important;
+  color: var(--red-accent) !important;
   text-decoration: none;
 }
 
@@ -810,7 +812,7 @@ a:hover::after,
 
 .aside-icon:hover {
   transition: .2s ease-out;
-  color: var(--red-accent) !important;
+  color: rgb(255, 185, 185) !important;
   opacity: .5;
 }
 
@@ -908,8 +910,8 @@ input:checked + .slider:before {
 .contact-btn {
   transition: .35s;
   font-size: 1.8rem;
-  background-color: var(--main-bg);
-  color: var(--minty);
+  background-color: rgb(70, 69, 69);
+  color: lavender;
 }
 .contact-btn:hover {
   background-color: var(--dark-teal) !important;
@@ -942,6 +944,7 @@ input:checked + .slider:before {
   .welcome-container{
     display: none;
   }
+
 }
 
 @media(max-width: 1024px){
@@ -971,6 +974,17 @@ input:checked + .slider:before {
   .slider.light:before {
     padding-left: .15rem;
   }
+  .home-slide {
+    font-size: 55px;
+    text-shadow: 0px 0px 0px rgba(224, 224, 224, 0.9);
+    text-align: center;
+  }
+  .realmer-slide {
+    width: 4rem;
+  }
+  .semicircle.svg svg {
+    bottom: -2px;
+  }
 
 }
 
@@ -999,6 +1013,27 @@ input:checked + .slider:before {
     margin-bottom: 15px;
     padding: 0px;
     width: 45%;
+  }
+  .project-header {
+    font-size: 2rem;
+    padding: 10px;
+  }
+  .realmer-slide {
+    display: none;
+  }
+  .home-project-description {
+    font-size: 1.3rem;
+  }
+  .side-contacts {
+    display: none;
+  }
+  .home-slide {
+    font-size: 26px;
+    text-shadow: 0px 0px 0px rgba(255,255,255,0.9);
+    text-align: center;
+  }
+  .semicircle.svg svg {
+    bottom: -1px;
   }
 }
 
