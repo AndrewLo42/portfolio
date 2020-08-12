@@ -26,6 +26,7 @@ body {
   background-color: var(--main-bg);
   font-family: GeoSans;
   user-select: none;
+  overflow-x: hidden;
 }
 .header-item{
   background-color: #020531;
