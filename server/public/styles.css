@@ -27,6 +27,7 @@ body {
   font-family: GeoSans;
   user-select: none;
   overflow-x: hidden;
+  width: 100vw;
 }
 .header-item{
   background-color: #020531;
@@ -400,8 +401,8 @@ a:hover {
   text-decoration: none;
 }
 
-a::before,
-a::after {
+.nav-item a::before,
+.nav-item a::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -416,12 +417,12 @@ a::after {
   transition: .3s all;
 }
 
-a::after {
+.nav-item a::after {
   width: 0%;
   background: linear-gradient(90deg, #90b1e9 0%, #99e4a4 100%);;
 }
 
-a:hover::after,
+.nav-item a:hover::after,
 .content-div:hover .heading::after {
   width: 100%;
   transition: .3s all;
@@ -1162,4 +1163,99 @@ input:checked + .slider:before {
   font-size: 24px;
   text-shadow: 0 1px 0 rgba(black, .1);
   text-indent: .3em;
+}
+
+/**
+ * The "shine" element
+ */
+
+.shine:after {
+  content: "";
+  position: absolute;
+  top: -110%;
+  left: -210%;
+  width: 200%;
+  height: 200%;
+  opacity: 0;
+  transform: rotate(15deg);
+
+  background: rgba(255, 255, 255, 0.13);
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.13) 0%,
+    rgba(255, 255, 255, 0.13) 77%,
+    rgba(255, 255, 255, 0.5) 92%,
+    rgba(255, 255, 255, 0.0) 100%
+  );
+}
+
+/* Hover state - trigger effect */
+
+.shine:hover:after {
+  opacity: 1;
+  top: -30%;
+  left: -30%;
+  transition-property: left, top, opacity;
+  transition-duration: 0.7s, 0.7s, 0.15s;
+  transition-timing-function: ease;
+}
+
+.nav-piece > .shine {
+  line-height: 2.2rem;
+  background: #c1f8ff00;
+  background: linear-gradient(
+    to right,
+    c1f8ff67 0%,
+    c1f8ff67 77%,
+    c1f8ff67 92%,
+    c1f8ff67 100%
+  );
+}
+.nav-piece > .shine:hover:after {
+  opacity: 0.7;
+}
+.shine:hover > .sidebar-page-list-item {
+  color: black;
+  transition: .3s;
+}
+
+.shine :active:after {
+opacity:0
+}
+/* Bracket Hovers */
+.bracket-hover a::before,
+.bracket-hover a::after {
+	/* display: inline-block; */
+	opacity: 0;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.2s;
+	transition: transform 0.3s, opacity 0.2s;
+}
+
+.bracket-hover a::before {
+	margin-right: 10px;
+	content: '[';
+	-webkit-transform: translateX(20px);
+	-moz-transform: translateX(20px);
+	transform: translateX(20px);
+}
+
+.bracket-hover a::after {
+	margin-left: 10px;
+	content: ']';
+	/* -webkit-transform: translateX(-20px);
+	-moz-transform: translateX(-20px);
+	transform: translateX(-20px); */
+}
+
+.bracket-hover a:hover::before,
+.bracket-hover a:hover::after {
+	opacity: 1;
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	transform: translateX(0px);
+}
+
+.bracket-hover a > i {
+  transition: all 300ms ease-in;
 }

@@ -14,7 +14,7 @@ function ContactFooter(props) {
           Contact Me
         </Col>
         <Row className={`mt-5 justify-content-center contact-row ${props.mode}`}>
-          <p className="text-center mb-md-0 mx-3">
+          <p className="bracket-hover text-center mb-md-0 mx-3">
             <a href="https://www.google.com/maps/place/Orange+County,+CA/@33.6410077,-118.0496294,10z/data=!3m1!4b1!4m5!3m4!1s0x80dc925c54d5f7cf:0xdea6c3618ff0d607!8m2!3d33.7174708!4d-117.8311428"
               className="pointer"
               target="_blank"
@@ -22,13 +22,13 @@ function ContactFooter(props) {
               <i className="fas fa-map-marker-alt mr-2" />Orange County
             </a>
           </p>
-          <p className="text-center mb-md-0 mx-3">
+          <p className="bracket-hover text-center mb-md-0 mx-3">
             <a href="mailto:andrewclo42@gmail.com"
               className="pointer">
               <i className="fas fa-envelope solid mr-2" />AndrewCLo42@gmail.com
             </a>
           </p>
-          <p className="text-center mb-md-0 mx-3">
+          <p className="bracket-hover text-center mb-md-0 mx-3">
             <a href="tel:+19492325930"
               className="pointer">
               <i className="fas fa-phone mr-2" />(949) 232-5930
