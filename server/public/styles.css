@@ -1256,6 +1256,6 @@ opacity:0
 	transform: translateX(0px);
 }
 
-.bracket-hover a > i {
-  transition: all 300ms ease-in;
-}
+/* .bracket-hover a > i {
+  transition: all 100ms ease-in;
+} */
