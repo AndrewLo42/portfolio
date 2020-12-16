@@ -6,7 +6,7 @@ import {
   Card,
   CardBody
 } from 'reactstrap';
-import SemiCircle from './semicircleDivider';
+// import SemiCircle from './semicircleDivider';
 
 function Tools(props) {
   return (
@@ -143,7 +143,7 @@ function Tools(props) {
           </Col>
         </Row>
       </Container>
-      <SemiCircle/>
+      {/* <SemiCircle/> */}
     </div>
   );
 }

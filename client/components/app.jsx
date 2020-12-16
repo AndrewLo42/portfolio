@@ -10,6 +10,8 @@ import FadeInPage from './fade-in-pages';
 import ScrollIndicator from './scroll-indicator';
 import Aside from './aside';
 import Context from './context';
+
+import SemiCircle from './semicircleDivider';
 // import ModeSlider from './mode-slider';
 import HomePageProjects from './homeProjects';
 // import useColorModes from './useMode';
@@ -65,7 +67,10 @@ class App extends React.Component {
         {/* <ModeSlider mode={this.state.view} toggleColor={this.toggleColor}/> */}
         <Aside mode={this.state.view}/>
         <ScrollIndicator mode={this.state.view}/>
-        {this.renderPages()}
+        <div className="pages-container">
+          {this.renderPages()}
+        </div>
+        <SemiCircle />
         <ContactFooter mode={this.state.view} />
       </>
     );

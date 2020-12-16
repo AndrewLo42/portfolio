@@ -41,6 +41,14 @@ class HomePageProjects extends React.Component {
             Exodia Exodus
             <img className="realmer-slide" src="./images/mmfavicon.png"></img>
           </div>
+          <div className="home-slide" onClick={() => this.handleView('Fireflies')}>
+            Fireflies
+            <img className="realmer-slide " src="./images/logo-black.png"></img>
+          </div>
+          {/* <div className="home-slide" onClick={() => this.handleView('Etc')}>
+            Other Projects
+            <img className="realmer-slide " src="./images/logo-black.png"></img>
+          </div> */}
         </div>
       </section>
     );

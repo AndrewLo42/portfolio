@@ -26,9 +26,10 @@ html, body {
   background-color: var(--main-bg);
   font-family: GeoSans;
   user-select: none;
-  overflow-x: hidden;
-
-  width: 100vw;
+  /* overflow-x: hidden; */
+}
+.pages-container {
+  overflow: hidden;
 }
 .header-item{
   background-color: #020531;
@@ -289,7 +290,7 @@ html, body {
   font-size: 2rem;
 }
 .home-example-gif{
-  width: 15rem;
+  width: 18rem;
   transition: all .2s ease-in-out;
 }
 
@@ -337,9 +338,12 @@ html, body {
   float: right;
   size: inherit;
   width: 5rem;
-
 }
-
+.small-image-slide {
+  width: 3rem;
+  margin-right: 1rem;
+  margin-top: .5rem;
+}
 
 .indicator-container {
   z-index: 30;
@@ -939,6 +943,7 @@ input:checked + .slider:before {
   color: var(--red-accent);
 }
 .semicircle.svg {
+  margin-top: 3rem;
   position: relative
 }
 .semicircle.svg svg {
@@ -950,6 +955,7 @@ input:checked + .slider:before {
   bottom: -1px;
   z-index: 100;
   left: 0px;
+
 }
 
 @media (max-height: 414px){
