@@ -1,4 +1,5 @@
 import React from 'react';
+import Applications from './projects';
 
 class ProjectInner extends React.Component {
   constructor(props) {
@@ -27,13 +28,30 @@ class ProjectInner extends React.Component {
         example: './images/mm.gif',
         link: 'http://exodia-exodus.andrewclo.com',
         icon: './images/mmfavicon.png'
+      },
+      Fireflies: {
+        title: 'Fireflies',
+        git: '',
+        description: ' A one-stop platform for advocacy. Support the causes you care about, track your impact, and share your experiences with the world! I was on boarded as a Software Engineer, our Git page is currently private, but enjoy the website! ',
+        example: './images/firefliesExample.png',
+        link: 'https://fireflies.app/#/',
+        icon: './images/logo-black.png'
+      },
+      Etc: {
+        title: 'Etc'
       }
     };
   }
 
   render() {
+    if (this.props.project === 'Etc') {
+      return <Applications />;
+    }
     return (
       <div>
+        <div className="justify-content-center d-flex mb-4">
+          <div className="line"></div>
+        </div>
         <div className="project-header row justify-content-between">
           <div className="d-flex projects-back fas fa-arrow-left" onClick={() => this.props.handleView('none')}>
             <div className="d-none pl-2 d-sm-flex">

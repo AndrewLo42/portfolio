@@ -7,7 +7,6 @@ import {
   Col,
   Button
 } from 'reactstrap';
-import Divider from './pageDivider';
 
 class Applications extends React.Component {
   constructor(props) {
@@ -75,6 +74,12 @@ class Applications extends React.Component {
   showAppInfo(classes) {
     return (
       <Container className="py-3">
+        <div className="d-flex projects-back fas fa-arrow-left" onClick={() => this.props.handleView('none')}>
+          <div className="d-none pl-2 d-sm-flex">
+              Back
+          </div>
+        </div>
+
         <div className={`m-auto justify-content-center ${classes} ${this.props.mode}`}>
           <div className={`app-title text-center ${this.props.mode}`}>
             {this.state.currentApp.name}
@@ -106,8 +111,6 @@ class Applications extends React.Component {
     const showBasketState = this.state.openAppBasket ? 'app-basket' : 'app-basket hide';
     return (
       <div className={`apps-page content-div ${this.props.mode}`} id="applications">
-        <Divider />
-
         <Container className="mt-5">
           <h2 className={`text-center mb-2 apps-title ${this.props.mode}`}>Applications Produced</h2>
           <Col className={`apps-container d-sm-flex d-none justify-content-around ${this.props.mode}`}>
