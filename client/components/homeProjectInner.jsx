@@ -45,7 +45,22 @@ class ProjectInner extends React.Component {
 
   render() {
     if (this.props.project === 'Etc') {
-      return <Applications />;
+      return (
+        <div>
+          <div className="justify-content-center d-flex mb-4">
+            <div className="line"></div>
+          </div>
+          <div className="project-header row justify-content-between">
+            <div className="d-flex projects-back fas fa-arrow-left" onClick={() => this.props.handleView('none')}>
+              <div className="d-none pl-2 d-sm-flex">
+              Back
+              </div>
+            </div>
+            <div className="fas">Other Projects</div>
+          </div>
+          <Applications/>
+        </div>
+      );
     }
     return (
       <div>
