@@ -526,18 +526,19 @@ a:hover::after,
 }
 
 .app-title {
-  font-size: 2rem;
-  color: lavender;
+  margin-top: 10px;
+  font-size: 2.5rem;
+  color: var(--parchment);
   text-decoration: underline;
-  text-decoration-color: #9984F1;
+  text-decoration-color: var(--minty);
 }
 .app-title.light {
   color: #352e2b;
   text-decoration-color: #AEB463;
 }
 .app-info {
-  font-size: 1.5rem;
-  color: #99e4a4;
+  font-size: 1.75rem;
+  color: lavender;
 }
 .app-info.light{
   color: black;
@@ -1112,6 +1113,16 @@ input:checked + .slider:before {
   .home-project-description {
     font-size: 1.3rem;
   }
+  .app-basket {
+    width: 102%;
+  }
+  .app-title{
+    font-size: 1.5rem;
+  }
+  .app-info {
+    font-size: 1.3rem;
+  }
+
   .side-contacts {
     display: none;
   }

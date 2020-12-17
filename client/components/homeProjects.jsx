@@ -45,10 +45,10 @@ class HomePageProjects extends React.Component {
             Fireflies
             <img className="realmer-slide " src="./images/logo-black.png"></img>
           </div>
-          {/* <div className="home-slide" onClick={() => this.handleView('Etc')}>
+          <div className="home-slide text-center" onClick={() => this.handleView('Etc')}>
             Other Projects
-            <img className="realmer-slide " src="./images/logo-black.png"></img>
-          </div> */}
+
+          </div>
         </div>
       </section>
     );
