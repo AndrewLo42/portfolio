@@ -661,6 +661,11 @@ a:hover::after,
   font-weight: 900;
 }
 
+.icon-image {
+  width: 85px;
+  padding-bottom: 15px;
+}
+
 .skills-card {
   /* background-color: #3c159878; */
   border: 1px solid #ffffff95;
@@ -1363,3 +1368,24 @@ opacity:0
 /* .bracket-hover a > i {
   transition: all 100ms ease-in;
 } */
+@media screen and (max-width: 50em){
+  #applications {
+    margin-bottom: 2rem;
+  }
+  .icon-image {
+    width: 71px;
+  }
+
+  .contact-row {
+    flex-direction: column;
+  }
+
+  .bracket-hover {
+    padding-top: 15px;
+  }
+
+  .contact-btn {
+    margin-bottom: 15px;
+  }
+
+}

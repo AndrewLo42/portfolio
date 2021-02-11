@@ -45,7 +45,7 @@ class HomePageProjects extends React.Component {
             Fireflies
             <img className="realmer-slide " src="./images/logo-black.png"></img>
           </div>
-          <div className="home-slide text-center" onClick={() => this.handleView('Etc')}>
+          <div className="home-slide text-center" onClick={() => { document.querySelector('.home-projects-sub').scrollIntoView({ behavior: 'smooth', block: 'end' }); this.handleView('Etc'); }}>
             Other Projects
 
           </div>

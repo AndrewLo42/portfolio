@@ -6,18 +6,23 @@ import {
 } from 'reactstrap';
 
 function BottomBar(props) {
+
+  const getYear = () => {
+    const today = new Date();
+    return today.getFullYear();
+  };
   return (
     <div className="bottom-page">
       <Container className="bottom-container" id="contact">
         <Col className="bottom-title text-center">
         </Col>
-        <Row className="credits-bar mt-2 justify-content-center contact-row">
-          <div>© Andrew Lo 2020</div>
+        <Row className="credits-bar mt-4 justify-content-center contact-row text-center pb-3">
+          <div>© Andrew Lo {getYear()}</div>
         </Row>
-        <div className="pt-3 footer_top">
+        {/* <div className="pt-3 footer_top">
           <div className="container">
           </div>
-        </div>
+        </div> */}
       </Container>
     </div>
   );
