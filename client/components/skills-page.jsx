@@ -20,7 +20,7 @@ function Skills(props) {
               <h3 className={`skills-header text-center heading mb-4 spread slide-in ${props.mode}`}>Technical Skills</h3>
             </div>
           </Col>
-          <Col lg="3" md="5" sm="6" className="p-sm-3 mobile-skills-card">
+          <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-skills-card">
             <Card className={`h-100 skills-card slide-in ${props.mode}`}>
               <CardBody>
                 <i className="devicon-javascript-plain"></i>
@@ -30,7 +30,7 @@ function Skills(props) {
               </CardBody>
             </Card>
           </Col>
-          <Col lg="3" md="5" sm="6" className="p-sm-3 mobile-skills-card">
+          <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-skills-card">
             <Card className="h-100 skills-card slide-in">
               <CardBody>
                 <i className="devicon-react-original"></i>
@@ -40,7 +40,7 @@ function Skills(props) {
               </CardBody>
             </Card>
           </Col>
-          <Col lg="3" md="5" sm="6" className="p-sm-3 mobile-skills-card">
+          <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-skills-card">
             <Card className="h-100 skills-card slide-in">
               <CardBody>
                 <i className="devicon-html5-plain"></i>
@@ -50,7 +50,7 @@ function Skills(props) {
               </CardBody>
             </Card>
           </Col>
-          <Col lg="3" md="5" sm="6" className="p-sm-3 mobile-skills-card">
+          <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-skills-card">
             <Card className="h-100 skills-card slide-in">
               <CardBody>
                 <i className="devicon-jquery-plain"></i>
@@ -60,7 +60,7 @@ function Skills(props) {
               </CardBody>
             </Card>
           </Col>
-          <Col lg="3" md="5" sm="6" className="p-sm-3 mobile-skills-card">
+          <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-skills-card">
             <Card className="h-100 skills-card slide-in">
               <CardBody>
                 <i className="devicon-postgresql-plain"></i>
@@ -70,7 +70,7 @@ function Skills(props) {
               </CardBody>
             </Card>
           </Col>
-          <Col lg="3" md="5" sm="6" className="p-sm-3 mobile-skills-card">
+          <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-skills-card">
             <Card className="h-100 skills-card slide-in">
               <CardBody>
                 <i className="devicon-nodejs-plain"></i>
@@ -80,7 +80,7 @@ function Skills(props) {
               </CardBody>
             </Card>
           </Col>
-          <Col lg="3" md="5" sm="6" className="p-sm-3 mobile-skills-card">
+          <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-skills-card">
             <Card className="h-100 skills-card slide-in">
               <CardBody>
                 <i className="devicon-css3-plain"></i>
@@ -90,12 +90,52 @@ function Skills(props) {
               </CardBody>
             </Card>
           </Col>
-          <Col lg="3" md="5" sm="6" className="p-sm-3 mobile-skills-card">
-            <Card className="h-100 skills-card slide-in">
+          <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-skills-card">
+            <Card className="h-100 skills-card slide-in ">
+              <CardBody>
+                <i className="devicon-bootstrap-plain"></i>
+                <div className="my-3">
+                  <h4 className="text-center skills-text">Bootstrap</h4>
+                </div>
+              </CardBody>
+            </Card>
+          </Col>
+          <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-skills-card">
+            <Card className="h-100 skills-card slide-in ">
               <CardBody>
                 <i className="fas fa-infinity"></i>
                 <div className="my-3">
                   <h4 className="text-center skills-text">Arduino</h4>
+                </div>
+              </CardBody>
+            </Card>
+          </Col>
+          <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-skills-card">
+            <Card className="h-100 skills-card slide-in">
+              <CardBody>
+                <i className="devicon-mongodb-plain"></i>
+                <div className="my-3">
+                  <h4 className="text-center skills-text">MongoDB</h4>
+                </div>
+              </CardBody>
+            </Card>
+          </Col>
+          <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-skills-card">
+            <Card className="h-100 skills-card slide-in ">
+              <CardBody>
+                <img className="icon-image" src="https://icongr.am/simple/graphql.svg?size=128&color=f5f5f5&colored=false"></img>
+                <div className="my-3">
+                  <h4 className="text-center skills-text">GraphQL</h4>
+                </div>
+              </CardBody>
+            </Card>
+          </Col>
+          <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-skills-card">
+            <Card className="h-100 skills-card slide-in ">
+              <CardBody>
+                <i className="devicon-c-plain"></i>
+                <div className="my-3">
+                  <h4 className="text-center skills-text">C</h4>
                 </div>
               </CardBody>
             </Card>
