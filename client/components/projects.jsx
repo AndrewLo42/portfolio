@@ -32,12 +32,12 @@ class Applications extends React.Component {
         },
         {
           appId: 3,
-          name: 'Shadow Realmer',
-          github: 'https://github.com/AndrewLo42/shadow-realmer',
-          live: 'http://shadowrealmer.com/',
-          icon: '/images/shadowrealmer.png',
+          name: 'Keeb Designer',
+          github: 'https://github.com/AndrewLo42/keyboard-designer',
+          live: 'https://keebdesigner.herokuapp.com/',
+          icon: '/images/keebfavi.png',
           example: '/images/realmer.gif',
-          description: 'A meet up app for trading card players of all kinds; enthusiasts, casuals, and the curious who want to find games to play, find events, trade cards, or just to make new friends. Built with React and PostgreSQL, utilizing various npm packages. '
+          description: 'A fun tool to help decide on color schemes for your next mechanical keyboard! With the ability to mix and match your case color and keycap colors, you can plan your dream build.'
         }
       ],
       openAppBasket: false,
@@ -72,7 +72,7 @@ class Applications extends React.Component {
 
   showAppInfo(classes) {
     return (
-      <Container className="py-3">
+      <Container className="py-3 mb-3">
         <div className={`m-auto justify-content-center ${classes} ${this.props.mode}`}>
           <div className={`app-title text-center ${this.props.mode}`}>
             {this.state.currentApp.name}
@@ -112,6 +112,10 @@ class Applications extends React.Component {
           <div className="home-slide " onClick={() => this.toggleAppBasket(1)}>
             UCSB Green Roofs
             <img className=" realmer-slide" src="./images/greenroof.png"></img>
+          </div>
+          <div className="home-slide " onClick={() => this.toggleAppBasket(2)}>
+            Keeb Designer
+            <img className=" realmer-slide" src="./images/keebfavi.png"></img>
           </div>
           {this.showAppInfo(showBasketState)}
         </Container>
