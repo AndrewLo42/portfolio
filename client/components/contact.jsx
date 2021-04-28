@@ -87,7 +87,7 @@ function ContactFooter(props) {
       </Container>
       <Col className=" mt-2 justify-content-center ">
         <div className="pb-5 row justify-content-center">
-          <img src="./images/die20.png" className="img-fluid header-logo"/>
+          <img src="./images/die20.png" className="img-fluid header-logo" alt="An Andrew Lo branded twenty sided dice"/>
         </div>
         {/* <div className="mb-2 boxed-btn3 text-center" href="#">
           <div className="smash-quote">

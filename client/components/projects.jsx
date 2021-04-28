@@ -107,15 +107,15 @@ class Applications extends React.Component {
         <Container className="mt-2">
           <div className="home-slide " onClick={() => this.toggleAppBasket(0)}>
             SSB Ironman
-            <img className=" realmer-slide" src="./images/super-smash-bros.png"></img>
+            <img className=" realmer-slide" src="./images/super-smash-bros.png" alt="Super Smash Brothers ball logo"></img>
           </div>
           <div className="home-slide " onClick={() => this.toggleAppBasket(1)}>
             UCSB Green Roofs
-            <img className=" realmer-slide" src="./images/greenroof.png"></img>
+            <img className=" realmer-slide" src="./images/greenroof.png" alt="A two leafed plant with a yellow circle with varied lines protruding from the circle in the background"></img>
           </div>
           <div className="home-slide " onClick={() => this.toggleAppBasket(2)}>
             Keeb Designer
-            <img className=" realmer-slide" src="./images/keebfavi.png"></img>
+            <img className=" realmer-slide" src="./images/keebfavi.png" alt="A 65% keyboard with white keycaps"></img>
           </div>
           {this.showAppInfo(showBasketState)}
         </Container>
