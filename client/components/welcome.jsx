@@ -7,7 +7,7 @@ class Welcome extends React.Component {
       <div className={` welcome-page ${this.props.mode}`}>
         <section className="home-home">
           <section className="home-icon pb-2 px-2" id="">
-            <div className=" container home-img">
+            <div className=" container home-img"role="img" aria-label="Andrew Lo sitting at a piano with a microphone in front of him" >
               <h2 className="home-img-msg"> Andrew Lo</h2>
               {/* <span className="d-none d-sm-block home-title-inner home-title container">  I am a Software Engineer with a passion for coding and learning.</span> */}
 

@@ -70,7 +70,8 @@ class NavBar extends React.Component {
             className="pointer decoration-none">
               <Row className="pl-2">
                 <img src="./images/die20.png"
-                  className="img-fluid header-logo"/>
+                  className="img-fluid header-logo"
+                  alt="An Andrew Lo branded twenty sided dice"/>
                 {/* <div className="text-center m-auto">ALo</div> */}
               </Row>
             </NavbarBrand>
