@@ -23,7 +23,7 @@ class HomePageProjects extends React.Component {
       );
     }
     return (
-      <section className = "home-projects-sub text-center" id="applications">
+      <section className = "home-projects-sub text-center mb-5" id="applications">
         <div className="justify-content-center d-flex mb-4">
           <div className="line"></div>
         </div>
@@ -44,6 +44,10 @@ class HomePageProjects extends React.Component {
           <div className="home-slide" onClick={() => this.handleView('Fireflies')}>
             Fireflies
             <img className="realmer-slide " src="./images/logo-black.png" alt="A cartoon interpretation of a firefly"></img>
+          </div>
+          <div className="home-slide" onClick={() => this.handleView('Todo')}>
+            Todo App
+            <img className="realmer-slide" src="./images/noteicon.png" alt="A piece of notepad paper with a computer in the middle"></img>
           </div>
           <div className="home-slide text-center" onClick={() => { document.querySelector('.home-projects-sub').scrollIntoView({ behavior: 'smooth', block: 'end' }); this.handleView('Etc'); }}>
             Other Projects
