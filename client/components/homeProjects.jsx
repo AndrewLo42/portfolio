@@ -42,8 +42,8 @@ class HomePageProjects extends React.Component {
             <img className="realmer-slide" src="./images/mmfavicon.png" alt="A millennium puzzle from Yu-Gi-Oh"></img>
           </div>
           <div className="home-slide" onClick={() => this.handleView('Fireflies')}>
-            Fireflies
-            <img className="realmer-slide " src="./images/logo-black.png" alt="A cartoon interpretation of a firefly"></img>
+            Matchraiser
+            <img className="realmer-slide " src="./images/matchraiser-logo.png" alt="Colorful arches that represent an M with a heart"></img>
           </div>
           <div className="home-slide" onClick={() => this.handleView('Todo')}>
             Todo App

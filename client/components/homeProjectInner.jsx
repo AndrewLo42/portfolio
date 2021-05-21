@@ -30,12 +30,12 @@ class ProjectInner extends React.Component {
         icon: './images/mmfavicon.png'
       },
       Fireflies: {
-        title: 'Fireflies',
+        title: 'Matchraiser',
         git: 'https://github.com/fireflies-app',
         description: ' A one-stop platform for advocacy. Support the causes you care about, track your impact, and share your experiences with the world! I was on boarded as a Software Engineer, our Git page is currently private, but enjoy the website! ',
         example: './images/firefliesExample.png',
-        link: 'https://fireflies.app/#/',
-        icon: './images/logo-black.png'
+        link: 'http://matchraiser.org/',
+        icon: './images/matchraiser-logo.png'
       },
       Todo: {
         title: 'Todo App',
