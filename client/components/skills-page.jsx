@@ -53,9 +53,9 @@ function Skills(props) {
           <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-skills-card">
             <Card className="h-100 skills-card slide-in">
               <CardBody>
-                <i className="devicon-jquery-plain"></i>
+                <i className="devicon-typescript-plain"></i>
                 <div className="my-3">
-                  <h4 className="text-center skills-text">jQuery</h4>
+                  <h4 className="text-center skills-text">TypeScript</h4>
                 </div>
               </CardBody>
             </Card>

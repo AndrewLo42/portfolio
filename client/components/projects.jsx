@@ -34,7 +34,7 @@ class Applications extends React.Component {
           appId: 3,
           name: 'Keeb Designer',
           github: 'https://github.com/AndrewLo42/keyboard-designer',
-          live: 'https://keebdesigner.herokuapp.com/',
+          live: 'https://andrewlo42.github.io/keyboard-designer/',
           icon: '/images/keebfavi.png',
           example: '/images/realmer.gif',
           description: 'A fun tool to help decide on color schemes for your next mechanical keyboard! With the ability to mix and match your case color and keycap colors, you can plan your dream build.'
