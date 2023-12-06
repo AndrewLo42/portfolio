@@ -64,9 +64,9 @@ function Tools(props) {
           <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-skills-card">
             <Card className="h-100 tools-card slide-in ">
               <CardBody>
-                <i className="devicon-babel-plain"></i>
+                <i className="fab fa-unity"></i>
                 <div className="my-3">
-                  <h5 className="text-center">Babel</h5>
+                  <h5 className="text-center">Unity</h5>
                 </div>
               </CardBody>
             </Card>
