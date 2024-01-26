@@ -42,7 +42,7 @@ class ProjectInner extends React.Component {
         git: 'https://github.com/AndrewLo42/todo-serverless-mern',
         description: ' A fullstack todo app built using React and a Serverless framework connected to a MongoDB cluster for a dynamic todo app with the extra security of having a serverless backend. It provides a warning when your deadline is near, so don\'t delay! ',
         example: './images/todoexample.png',
-        link: 'https://alo-todo.herokuapp.com/',
+        link: 'https://andrewlo42.github.io/todo-serverless-mern/',
         icon: './images/noteicon.png'
       },
       Etc: {
