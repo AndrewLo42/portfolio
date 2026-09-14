@@ -55,9 +55,6 @@ class ProjectInner extends React.Component {
     if (this.props.project === 'Etc') {
       return (
         <div>
-          <div className="justify-content-center d-flex mb-4">
-            <div className="line"></div>
-          </div>
           <div className="project-header row justify-content-between">
             <div className="d-flex projects-back fas fa-arrow-left" onClick={() => this.props.handleView('none')}>
               <div className="d-none pl-2 d-sm-flex">
@@ -72,9 +69,6 @@ class ProjectInner extends React.Component {
     }
     return (
       <div>
-        <div className="justify-content-center d-flex mb-4">
-          <div className="line"></div>
-        </div>
         <div className="project-header row justify-content-between">
           <div className="d-flex projects-back fas fa-arrow-left" onClick={() => this.props.handleView('none')}>
             <div className="d-none pl-2 d-sm-flex">
@@ -93,13 +87,13 @@ class ProjectInner extends React.Component {
           <div className="row my-2 justify-content-center">
             <a
               href={this.state[this.props.project].link}
-              className="app-btn btn btn-default decoration-none default-nav pointer mr-2"
+              className="app-btn btn btn-default decoration-none pointer mr-2"
               target="_blank"
               rel="noopener noreferrer"
             >Live</a>
             <a
               href={this.state[this.props.project].git}
-              className="app-btn btn btn-default decoration-none default-nav pointer mr-2"
+              className="app-btn btn btn-default decoration-none pointer mr-2"
               target="_blank"
               rel="noopener noreferrer"
             >GitHub</a>

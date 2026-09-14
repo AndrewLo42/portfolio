@@ -1,5 +1,6 @@
 import React from 'react';
 import ProjectInner from './homeProjectInner';
+import Divider from './pageDivider';
 
 class HomePageProjects extends React.Component {
   constructor(props) {
@@ -23,35 +24,32 @@ class HomePageProjects extends React.Component {
       );
     }
     return (
-      <section className = "home-projects-sub text-center mb-5" id="applications">
-        <div className="justify-content-center d-flex mb-4">
-          <div className="line"></div>
-        </div>
-        <h1 className="mb-4">Projects</h1>
+      <section className="home-projects-sub text-center mb-5" id="applications">
+        <Divider />
+        <h1 className="mb-4 section-heading">Projects</h1>
         <div className="home-project-slides container">
-          <div className="home-slide " onClick={() => this.handleView('Realmer')}>
+          <div className="home-slide" onClick={() => this.handleView('Realmer')}>
+            <img className="home-slide-icon" src="./images/shadowrealmer.png" alt="Brown triangle with 5 circles in colors to represent the Magic Trading Card Game colors"></img>
             Shadow Realmer
-            <img className=" realmer-slide" src="./images/shadowrealmer.png" alt="Brown triangle with 5 circles in colors to represent the Magic Trading Card Game colors"></img>
           </div>
           <div className="home-slide" onClick={() => this.handleView('Pedals')}>
+            <img className="home-slide-icon" src="./images/minpedal.png" alt="A white MXR guitar pedal"></img>
             Wicked Pedals
-            <img className="realmer-slide" src="./images/minpedal.png" alt="A white MXR guitar pedal"></img>
           </div>
           <div className="home-slide" onClick={() => this.handleView('Exodia')}>
+            <img className="home-slide-icon" src="./images/mmfavicon.png" alt="A millennium puzzle from Yu-Gi-Oh"></img>
             Exodia Exodus
-            <img className="realmer-slide" src="./images/mmfavicon.png" alt="A millennium puzzle from Yu-Gi-Oh"></img>
           </div>
           <div className="home-slide" onClick={() => this.handleView('Fireflies')}>
+            <img className="home-slide-icon" src="./images/matchraiser-logo.png" alt="Colorful arches that represent an M with a heart"></img>
             Matchraiser
-            <img className="realmer-slide " src="./images/matchraiser-logo.png" alt="Colorful arches that represent an M with a heart"></img>
           </div>
           <div className="home-slide" onClick={() => this.handleView('Todo')}>
+            <img className="home-slide-icon" src="./images/noteicon.png" alt="A piece of notepad paper with a computer in the middle"></img>
             Todo App
-            <img className="realmer-slide" src="./images/noteicon.png" alt="A piece of notepad paper with a computer in the middle"></img>
           </div>
-          <div className="home-slide text-center" onClick={() => { document.querySelector('.home-projects-sub').scrollIntoView({ behavior: 'smooth', block: 'end' }); this.handleView('Etc'); }}>
+          <div className="home-slide" onClick={() => { document.querySelector('.home-projects-sub').scrollIntoView({ behavior: 'smooth', block: 'end' }); this.handleView('Etc'); }}>
             Other Projects
-
           </div>
         </div>
       </section>
