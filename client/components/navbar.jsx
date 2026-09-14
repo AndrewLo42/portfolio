@@ -21,7 +21,6 @@ class NavBar extends React.Component {
       isOpen: false
     });
     this.handleToggle = this.handleToggle.bind(this);
-    this.handleColorToggle = this.handleColorToggle.bind(this);
     if (typeof window !== 'undefined') {
       let prevScrollpos = window.pageYOffset;
       window.onscroll = function () {
@@ -47,10 +46,6 @@ class NavBar extends React.Component {
     }
   }
 
-  handleColorToggle() {
-    this.props.toggleColor(event.target.name);
-  }
-
   render() {
     let offset = -90;
 
@@ -72,23 +67,22 @@ class NavBar extends React.Component {
                 <img src="./images/die20.png"
                   className="img-fluid header-logo"
                   alt="An Andrew Lo branded twenty sided dice"/>
-                {/* <div className="text-center m-auto">ALo</div> */}
               </Row>
             </NavbarBrand>
             <div className="mobile-header-icons">
               <a href="https://github.com/andrewlo42"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="decoration-none default-nav contact-github pointer mr-2"
+                className="decoration-none contact-github pointer mr-2"
                 aria-label="Github">
-                <div className="border-div-small d-flex">
+                <div className="d-flex">
                   <i className="fab fa-github aside-icon m-auto" />
                 </div>
               </a>
               <a href="https://www.linkedin.com/in/AndrewCLo/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="decoration-none default-nav contact-linkedin pointer mr-2"
+                className="decoration-none contact-linkedin pointer mr-2"
                 aria-label="LinkedIn">
                 <div className="d-flex">
                   <i className="fab fa-linkedin aside-icon m-auto" />
@@ -100,7 +94,7 @@ class NavBar extends React.Component {
                 className="decoration-none pointer mr-2"
                 aria-label="Resume Download"
               >
-                <div className="border-div-small d-flex">
+                <div className="d-flex">
                   <i className="far fa-file-alt aside-icon m-auto" />
                 </div>
               </a>
@@ -174,12 +168,6 @@ class NavBar extends React.Component {
               </Nav>
             </Collapse>
           </Navbar>
-          {/* <div className="color-container text-center">
-            <div className="text-center">
-              <Button name="dark" type="checkbox" className="dark-color-button text-center mr-1" onClick={() => this.handleColorToggle()}> D </Button>
-              <Button name="light" type="checkbox" className="light-color-button text-center" onClick={() => this.handleColorToggle()}> L </Button>
-            </div>
-          </div> */}
         </Container>
       </>
     );

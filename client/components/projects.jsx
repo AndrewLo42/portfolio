@@ -1,6 +1,4 @@
 import React from 'react';
-// import AppCard from './project-card';
-// import BigApp from './big-project-card';
 import {
   Container,
   Row,
@@ -73,28 +71,25 @@ class Applications extends React.Component {
   showAppInfo(classes) {
     return (
       <Container className="py-3 mb-3">
-        <div className={`m-auto justify-content-center ${classes} ${this.props.mode}`}>
-          <div className={`app-title text-center ${this.props.mode}`}>
+        <div className={'m-auto justify-content-center ' + classes}>
+          <div className="app-title text-center">
             {this.state.currentApp.name}
           </div>
-          <div className={` px-3 app-info text-center ${this.props.mode}`}>{this.state.currentApp.description}</div>
+          <div className="px-3 app-info text-center">{this.state.currentApp.description}</div>
           <Row className="py-3 mb-2 text-center justify-content-center">
             <Button
               href={this.state.currentApp.live}
-              className="app-btn btn btn-default decoration-none default-nav pointer mr-2"
+              className="app-btn btn btn-default decoration-none pointer mr-2"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Github">Live</Button>
             <Button
               href={this.state.currentApp.github}
-              className="app-btn btn btn-default decoration-none default-nav pointer mr-2"
+              className="app-btn btn btn-default decoration-none pointer mr-2"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Github">Source</Button>
           </Row>
-          {/* <Row>
-            <img className="p-2 app-example m-auto img-fluid" src={this.state.currentApp.example}></img>
-          </Row> */}
         </div>
       </Container>
     );
@@ -103,19 +98,19 @@ class Applications extends React.Component {
   render() {
     const showBasketState = this.state.openAppBasket ? 'app-basket' : 'app-basket hide';
     return (
-      <div className={`apps-page content-div ${this.props.mode}`} id="applications">
+      <div className="apps-page content-div" id="applications">
         <Container className="mt-2">
-          <div className="home-slide " onClick={() => this.toggleAppBasket(0)}>
+          <div className="home-slide" onClick={() => this.toggleAppBasket(0)}>
+            <img className="home-slide-icon" src="./images/super-smash-bros.png" alt="Super Smash Brothers ball logo"></img>
             SSB Ironman
-            <img className=" realmer-slide" src="./images/super-smash-bros.png" alt="Super Smash Brothers ball logo"></img>
           </div>
-          <div className="home-slide " onClick={() => this.toggleAppBasket(1)}>
+          <div className="home-slide" onClick={() => this.toggleAppBasket(1)}>
+            <img className="home-slide-icon" src="./images/greenroof.png" alt="A two leafed plant with a yellow circle with varied lines protruding from the circle in the background"></img>
             UCSB Green Roofs
-            <img className=" realmer-slide" src="./images/greenroof.png" alt="A two leafed plant with a yellow circle with varied lines protruding from the circle in the background"></img>
           </div>
-          <div className="home-slide " onClick={() => this.toggleAppBasket(2)}>
+          <div className="home-slide" onClick={() => this.toggleAppBasket(2)}>
+            <img className="home-slide-icon" src="./images/keebfavi.png" alt="A 65% keyboard with white keycaps"></img>
             Keeb Designer
-            <img className=" realmer-slide" src="./images/keebfavi.png" alt="A 65% keyboard with white keycaps"></img>
           </div>
           {this.showAppInfo(showBasketState)}
         </Container>
